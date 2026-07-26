@@ -92,13 +92,21 @@ jobs:
             let pages = await getPages();
             if (!pages) {
               console.log('Creating Pages site...');
-              const created = await github.rest.repos.createPagesSite({
-                owner,
-                repo,
-                build_type: 'legacy',
-                source,
-              });
-              console.log(created.data.html_url || created.data.url);
+              try {
+                const created = await github.rest.repos.createPagesSite({
+                  owner,
+                  repo,
+                  build_type: 'legacy',
+                  source,
+                });
+                console.log(created.data.html_url || created.data.url);
+              } catch (e) {
+                core.warning(
+                  'Could not enable GitHub Pages via API (' +
+                    e.message +
+                    '). Open Settings → Pages → Deploy from a branch → main /docs → Save. Site files are already in docs/.',
+                );
+              }
               return;
             }
             console.log('Pages exists:', pages.data.html_url);

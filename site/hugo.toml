@@ -38,3 +38,5 @@ disableKinds = ["taxonomy", "term"]
 [outputs]
   home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
+
+# pages deploy

@@ -13,7 +13,8 @@ A passionate software craftsman focusing on building intelligent systems, robust
 Blog Hugo di GitHub Pages tentang otomasi berbasis agen.
 
 - Situs: [gildedantiquity.github.io/gildedantiquity](https://gildedantiquity.github.io/gildedantiquity/)
-- Sumber: folder [`site/`](./site/)
+- Sumber: [`site/`](./site/) (build) → [`docs/`](./docs/) (published)
+- Jika URL 404: **Settings → Pages → Deploy from a branch → `main` / `/docs` → Save**
 
 ---
 

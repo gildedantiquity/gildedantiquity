@@ -3,28 +3,38 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: ["main"]
+    paths:
+      - "site/**"
+      - ".github/workflows/hugo-pages.yml"
+      - "scripts/**"
+  workflow_run:
+    workflows: ["Daily blog posts"]
+    types: [completed]
   schedule:
-    # 08:00 WIB (01:00 UTC) — publish posts whose date has arrived
-    - cron: "0 1 * * *"
+    - cron: "15 1 * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
+    if: >
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     env:
       HUGO_VERSION: "0.148.2"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -32,33 +42,33 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
-      - name: Build
+      - name: Build into docs/
         working-directory: site
-        run: hugo --minify --gc
+        run: |
+          rm -rf ../docs
+          hugo --minify --gc -d ../docs
+          touch ../docs/.nojekyll
 
       - name: Ensure internal schedule was not published
         run: |
-          if [ -e site/public/internal ] || [ -e site/public/posting-schedule.json ] || [ -e site/public/jadwal ] || [ -e site/public/jadwal.html ]; then
+          if [ -e docs/internal ] || [ -e docs/posting-schedule.json ] || [ -e docs/jadwal ] || [ -e docs/jadwal.html ]; then
             echo "Internal or schedule paths found in public output" >&2
             exit 1
           fi
-          if grep -RInE 'posting-schedule|jadwal postingan|data-schedule' site/public; then
+          if grep -RInE 'posting-schedule|jadwal postingan|data-schedule' docs; then
             echo "Schedule-related content leaked into public output" >&2
             exit 1
           fi
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site/public
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit docs/ for branch-based GitHub Pages
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A docs
+          if git diff --staged --quiet; then
+            echo "docs/ unchanged"
+            exit 0
+          fi
+          git commit -m "deploy: update GitHub Pages site in docs/"
+          git push origin HEAD:main

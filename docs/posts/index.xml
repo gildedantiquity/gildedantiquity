@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Sun, 26 Jul 2026 09:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Tool Use &amp; Function Calling untuk Otomasi Nyata</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/tool-use-function-calling/</link><pubDate>Sun, 26 Jul 2026 09:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/tool-use-function-calling/</guid><description>&lt;h2 id="ide-intinya-sederhana">Ide intinya sederhana&lt;/h2>
+&lt;p>Model memilih nama fungsi dan argumen terstruktur. Runtime Anda yang mengeksekusi. Hasil eksekusi dikembalikan ke model sebagai observasi berikutnya. Model tidak “langsung menyentuh” produksi; ia mengajukan niat, sistem yang memutuskan boleh tidaknya.&lt;/p>
+&lt;h2 id="kontrak-tool-yang-baik">Kontrak tool yang baik&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Nama jelas&lt;/strong> — &lt;code>create_draft_pr&lt;/code> lebih baik daripada &lt;code>do_stuff&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>Schema ketat&lt;/strong> — tipe, enum, required fields, contoh valid.&lt;/li>
+&lt;li>&lt;strong>Deskripsi jujur&lt;/strong> — kapan dipakai, kapan tidak, efek sampingnya apa.&lt;/li>
+&lt;li>&lt;strong>Output stabil&lt;/strong> — JSON konsisten agar loop berikutnya tidak bingung.&lt;/li>
+&lt;/ul>
+&lt;h2 id="pola-izin-berlapis">Pola izin berlapis&lt;/h2>
+&lt;p>Kelompokkan tools menurut risiko:&lt;/p></description></item><item><title>Perceive–Plan–Act: Anatomi Satu Loop Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/perceive-plan-act/</link><pubDate>Sun, 26 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/perceive-plan-act/</guid><description>&lt;h2 id="1-perceive--baca-dunia-apa-adanya">1. Perceive — baca dunia apa adanya&lt;/h2>
+&lt;p>Agen mengumpulkan sinyal: pesan user, state ticket, isi file, hasil query, atau screenshot UI. Perceive yang buruk menghasilkan rencana yang anggun tapi salah sasaran.&lt;/p>
+&lt;ul>
+&lt;li>Normalisasi input (hapus noise, standarisasi format).&lt;/li>
+&lt;li>Ambil hanya fakta yang relevan untuk goal saat ini.&lt;/li>
+&lt;li>Catat ketidakpastian: “data X belum tersedia” lebih baik daripada mengarang.&lt;/li>
+&lt;/ul>
+&lt;h2 id="2-plan--pecah-goal-jadi-langkah">2. Plan — pecah goal jadi langkah&lt;/h2>
+&lt;p>Perencanaan mengubah goal kabur menjadi urutan aksi yang bisa dicek. Rencana bagus biasanya pendek, punya kriteria selesai, dan menyebut tools yang akan dipakai.&lt;/p></description></item><item><title>Apa Itu Agentic AI Automation?</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/apa-itu-agentic-ai/</link><pubDate>Sun, 26 Jul 2026 07:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/apa-itu-agentic-ai/</guid><description>&lt;h2 id="definisi-kerja">Definisi kerja&lt;/h2>
+&lt;p>&lt;strong>Agentic AI Automation&lt;/strong> adalah pola sistem di mana model bahasa tidak hanya menghasilkan teks, tetapi juga:&lt;/p>
+&lt;ul>
+&lt;li>mengamati konteks atau state dunia (perceive),&lt;/li>
+&lt;li>menyusun rencana langkah (plan),&lt;/li>
+&lt;li>memanggil tools/API untuk bertindak (act),&lt;/li>
+&lt;li>mengevaluasi hasil lalu mengulang bila perlu.&lt;/li>
+&lt;/ul>
+&lt;p>Otomasi di sini bukan sekadar “jika X maka Y” yang kaku. Agen bisa menyesuaikan urutan aksi ketika situasi berubah—asal kita memberi batas yang jelas.&lt;/p></description></item></channel></rss>

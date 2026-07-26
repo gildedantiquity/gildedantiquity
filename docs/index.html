@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AGENSI — Blog Harian Agentic AI Automation</title>
+    <meta
+      name="description"
+      content="AGENSI adalah blog harian tentang Agentic AI Automation: arsitektur agen, tool use, multi-agent, evaluasi, dan praktik produksi."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="nav" aria-label="Utama">
+          <a class="brand" href="index.html">AGEN<span>SI</span></a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            Menu
+          </button>
+          <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html" aria-current="page">Beranda</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="jadwal.html">Jadwal</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a class="nav-cta" href="jadwal.html">Lihat jadwal harian</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-stage" aria-hidden="true">
+          <svg viewBox="0 0 560 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="40" y1="40" x2="520" y2="480" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0f766e" stop-opacity="0.85" />
+                <stop offset="1" stop-color="#1c2738" stop-opacity="0.55" />
+              </linearGradient>
+            </defs>
+            <rect x="24" y="36" width="512" height="448" fill="url(#g1)" opacity="0.12" />
+            <circle cx="280" cy="250" r="118" stroke="#0f766e" stroke-width="2.5" opacity="0.55" />
+            <circle cx="280" cy="250" r="72" stroke="#115e59" stroke-width="1.5" opacity="0.4" />
+            <path d="M280 132 V188 M280 312 V368 M162 250 H218 M342 250 H398" stroke="#0b1220" stroke-width="2" opacity="0.35" />
+            <circle cx="280" cy="132" r="10" fill="#0f766e" />
+            <circle cx="280" cy="368" r="10" fill="#0b1220" />
+            <circle cx="162" cy="250" r="10" fill="#115e59" />
+            <circle cx="398" cy="250" r="10" fill="#0f766e" />
+            <path d="M190 170 C230 210, 330 210, 370 170" stroke="#0f766e" stroke-width="2" opacity="0.5" />
+            <path d="M190 330 C230 290, 330 290, 370 330" stroke="#1c2738" stroke-width="2" opacity="0.35" />
+            <text x="214" y="256" fill="#0b1220" font-family="Syne, sans-serif" font-size="28" font-weight="800" opacity="0.8">LOOP</text>
+          </svg>
+        </div>
+
+        <p class="hero-brand">AGEN<em>SI</em></p>
+        <h1>Otomasi yang berpikir, bertindak, dan belajar setiap hari.</h1>
+        <p>
+          Jurnal praktik Agentic AI Automation—dari loop Perceive–Plan–Act hingga guardrails
+          produksi—satu tulisan baru setiap pagi.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="posts/apa-itu-agentic-ai.html">Baca edisi terbaru</a>
+          <a class="btn btn-ghost" href="jadwal.html">Jadwal 30 hari</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head reveal">
+          <h2>Edisi yang sudah tayang</h2>
+          <p>Tiga tulisan pembuka untuk membangun fondasi sebelum masuk ke arsitektur dan operasi.</p>
+        </div>
+        <div class="post-list">
+          <a class="post-item reveal" href="posts/apa-itu-agentic-ai.html">
+            <span class="post-date">26 Jul</span>
+            <div>
+              <h3>Apa Itu Agentic AI Automation?</h3>
+              <p>Definisi praktis, bedanya dengan chatbot, dan peta masalah yang cocok diotomasi agen.</p>
+            </div>
+            <span class="post-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="post-item reveal" href="posts/perceive-plan-act.html">
+            <span class="post-date">27 Jul</span>
+            <div>
+              <h3>Perceive–Plan–Act: Anatomi Satu Loop Agen</h3>
+              <p>Siklus inti yang membuat sistem AI berhenti “jawab saja” dan mulai menyelesaikan kerja.</p>
+            </div>
+            <span class="post-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="post-item reveal" href="posts/tool-use-function-calling.html">
+            <span class="post-date">28 Jul</span>
+            <div>
+              <h3>Tool Use & Function Calling untuk Otomasi Nyata</h3>
+              <p>Cara menghubungkan model ke API, file, dan browser tanpa kehilangan kontrol.</p>
+            </div>
+            <span class="post-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head reveal">
+          <h2>Jadwal terbit setiap hari</h2>
+          <p>
+            Ritme tetap: satu topik per hari pukul 08:00 WIB. Tema berputar dari fondasi, teknik,
+            keamanan, sampai strategi produk.
+          </p>
+        </div>
+        <div class="cta-row reveal">
+          <a class="btn btn-primary" href="jadwal.html">Buka kalender konten</a>
+          <a class="btn btn-ghost" href="blog.html">Semua tulisan</a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div>
+          <strong>AGENSI</strong><br />
+          Blog harian Agentic AI Automation oleh gildedantiquity.
+        </div>
+        <div>github.io · ritme harian · praktik produksi</div>
+      </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+{
+  "timezone": "Asia/Jakarta",
+  "cadence": "Setiap hari pukul 08:00 WIB",
+  "series": "Agentic AI Automation",
+  "posts": [
+    {
+      "date": "2026-07-26",
+      "title": "Apa Itu Agentic AI Automation?",
+      "slug": "apa-itu-agentic-ai",
+      "theme": "Fondasi",
+      "status": "live",
+      "summary": "Definisi, bedanya dengan chatbot, dan kenapa otomasi berbasis agen sedang naik."
+    },
+    {
+      "date": "2026-07-27",
+      "title": "Perceive–Plan–Act: Anatomi Satu Loop Agen",
+      "slug": "perceive-plan-act",
+      "theme": "Fondasi",
+      "status": "live",
+      "summary": "Cara kerja siklus inti agen: mengamati, merencanakan, lalu bertindak."
+    },
+    {
+      "date": "2026-07-28",
+      "title": "Tool Use & Function Calling untuk Otomasi Nyata",
+      "slug": "tool-use-function-calling",
+      "theme": "Teknik",
+      "status": "live",
+      "summary": "Menghubungkan LLM ke API, browser, dan sistem internal secara aman."
+    },
+    {
+      "date": "2026-07-29",
+      "title": "Memory untuk Agen: Short-term, Long-term, dan Episodic",
+      "slug": "memory-untuk-agen",
+      "theme": "Teknik",
+      "status": "planned",
+      "summary": "Strategi menyimpan konteks agar agen tidak amnesia tiap sesi."
+    },
+    {
+      "date": "2026-07-30",
+      "title": "Prompt vs Policy: Menulis Instruksi yang Bisa Dieksekusi",
+      "slug": "prompt-vs-policy",
+      "theme": "Teknik",
+      "status": "planned",
+      "summary": "Dari prompt longgar ke kebijakan operasional yang jelas dan teruji."
+    },
+    {
+      "date": "2026-07-31",
+      "title": "Multi-Agent: Kapan Satu Agen Tidak Cukup",
+      "slug": "multi-agent-kapan",
+      "theme": "Arsitektur",
+      "status": "planned",
+      "summary": "Pola orkestrasi researcher–executor–reviewer untuk tugas kompleks."
+    },
+    {
+      "date": "2026-08-01",
+      "title": "Human-in-the-Loop tanpa Membunuh Otomasi",
+      "slug": "human-in-the-loop",
+      "theme": "Operasional",
+      "status": "planned",
+      "summary": "Titik approval yang tepat agar tetap cepat tapi terkendali."
+    },
+    {
+      "date": "2026-08-02",
+      "title": "Evaluasi Agen: Success Rate, Cost, dan Latency",
+      "slug": "evaluasi-agen",
+      "theme": "Operasional",
+      "status": "planned",
+      "summary": "Metrik yang harus Anda ukur sebelum men-scale otomasi."
+    },
+    {
+      "date": "2026-08-03",
+      "title": "Observability: Melacak Jejak Keputusan Agen",
+      "slug": "observability-agen",
+      "theme": "Operasional",
+      "status": "planned",
+      "summary": "Logging, traces, dan replay untuk debug perilaku non-deterministik."
+    },
+    {
+      "date": "2026-08-04",
+      "title": "Guardrails: Batas Aman untuk Aksi Otonom",
+      "slug": "guardrails-agen",
+      "theme": "Keamanan",
+      "status": "planned",
+      "summary": "Allowlist tools, budget token, dan kebijakan destructive action."
+    },
+    {
+      "date": "2026-08-05",
+      "title": "RAG untuk Agen: Dokumen sebagai Sensor Dunia",
+      "slug": "rag-untuk-agen",
+      "theme": "Teknik",
+      "status": "planned",
+      "summary": "Menggabungkan retrieval dengan perencanaan agar jawaban berbasis fakta."
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Browser Agents: Otomasi UI yang Rapuh tapi Powerful",
+      "slug": "browser-agents",
+      "theme": "Use Case",
+      "status": "planned",
+      "summary": "Kapan memakai browser agent, dan bagaimana menstabilkannya."
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Workflow Engine + LLM: Teman, Bukan Saingan",
+      "slug": "workflow-engine-llm",
+      "theme": "Arsitektur",
+      "status": "planned",
+      "summary": "Memadukan n8n/Temporal dengan kemampuan reasoning agen."
+    },
+    {
+      "date": "2026-08-08",
+      "title": "Cost Control: Budget Token per Tugas",
+      "slug": "cost-control-agen",
+      "theme": "Operasional",
+      "status": "planned",
+      "summary": "Teknik membatasi loop agar otomasi tidak menghabiskan kuota."
+    },
+    {
+      "date": "2026-08-09",
+      "title": "Failure Modes Agen yang Paling Sering Muncul",
+      "slug": "failure-modes-agen",
+      "theme": "Operasional",
+      "status": "planned",
+      "summary": "Hallucinated tools, infinite loops, dan silent wrong answers."
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Desain State Machine untuk Agen Produksi",
+      "slug": "state-machine-agen",
+      "theme": "Arsitektur",
+      "status": "planned",
+      "summary": "Menjadikan perilaku agen eksplisit dengan state dan transisi."
+    },
+    {
+      "date": "2026-08-11",
+      "title": "Testing Agen: Unit, Scenario, dan Replay",
+      "slug": "testing-agen",
+      "theme": "Engineering",
+      "status": "planned",
+      "summary": "Cara menguji sistem non-deterministik dengan dataset skenario."
+    },
+    {
+      "date": "2026-08-12",
+      "title": "Agentic CI: Review PR dan Triage Issue Otomatis",
+      "slug": "agentic-ci",
+      "theme": "Use Case",
+      "status": "planned",
+      "summary": "Pola otomasi engineering yang aman untuk repo harian."
+    },
+    {
+      "date": "2026-08-13",
+      "title": "Customer Support Agent yang Tidak Membuat Marah User",
+      "slug": "support-agent",
+      "theme": "Use Case",
+      "status": "planned",
+      "summary": "Escalation policy, tone control, dan batas klaim."
+    },
+    {
+      "date": "2026-08-14",
+      "title": "Data Pipeline Agent: dari Inbox ke Insight",
+      "slug": "data-pipeline-agent",
+      "theme": "Use Case",
+      "status": "planned",
+      "summary": "Agen yang mengekstrak, membersihkan, dan merangkum data operasional."
+    },
+    {
+      "date": "2026-08-15",
+      "title": "Personal Productivity Agent tanpa Kehilangan Privasi",
+      "slug": "personal-productivity-agent",
+      "theme": "Use Case",
+      "status": "planned",
+      "summary": "Local-first tools, sandboxed actions, dan consent yang jelas."
+    },
+    {
+      "date": "2026-08-16",
+      "title": "Model Routing: Kapan Pakai Model Kecil vs Besar",
+      "slug": "model-routing",
+      "theme": "Teknik",
+      "status": "planned",
+      "summary": "Routing cerdas untuk menekan biaya tanpa menjatuhkan kualitas."
+    },
+    {
+      "date": "2026-08-17",
+      "title": "Structured Output: JSON Schema sebagai Kontrak Agen",
+      "slug": "structured-output",
+      "theme": "Teknik",
+      "status": "planned",
+      "summary": "Membuat keluaran agen bisa diandalkan sistem hilir."
+    },
+    {
+      "date": "2026-08-18",
+      "title": "Self-Reflection: Agen yang Mengoreksi Dirinya Sendiri",
+      "slug": "self-reflection",
+      "theme": "Teknik",
+      "status": "planned",
+      "summary": "Pola critique–revise dan batas kapan harus berhenti."
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Keamanan Prompt Injection di Sistem Berbasis Tools",
+      "slug": "prompt-injection",
+      "theme": "Keamanan",
+      "status": "planned",
+      "summary": "Ancaman klasik dan mitigasi praktis untuk otomasi agen."
+    },
+    {
+      "date": "2026-08-20",
+      "title": "Permissions Model: Least Privilege untuk Agen",
+      "slug": "permissions-model",
+      "theme": "Keamanan",
+      "status": "planned",
+      "summary": "Credential scoping, ephemeral tokens, dan audit trail."
+    },
+    {
+      "date": "2026-08-21",
+      "title": "Deploy Agen: dari Notebook ke Service 24/7",
+      "slug": "deploy-agen",
+      "theme": "Engineering",
+      "status": "planned",
+      "summary": "Pola deployment, queue, retry, dan idempotency."
+    },
+    {
+      "date": "2026-08-22",
+      "title": "Productizing Agent: dari Demo Keren ke Fitur Andal",
+      "slug": "productizing-agent",
+      "theme": "Produk",
+      "status": "planned",
+      "summary": "Checklist produk untuk mengubah eksperimen menjadi value."
+    },
+    {
+      "date": "2026-08-23",
+      "title": "KPI Bisnis untuk Otomasi Agentic",
+      "slug": "kpi-bisnis-agentic",
+      "theme": "Produk",
+      "status": "planned",
+      "summary": "Mengukur dampak: waktu hemat, error rate, dan kepuasan."
+    },
+    {
+      "date": "2026-08-24",
+      "title": "Roadmap 90 Hari Membangun Tim Agentic AI",
+      "slug": "roadmap-90-hari",
+      "theme": "Strategi",
+      "status": "planned",
+      "summary": "Urutan investasi skill, tooling, dan use case prioritas."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+name: Enable GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/enable-pages.yml"
+
+permissions:
+  contents: read
+  pages: write
+  administration: write
+
+jobs:
+  enable:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable Pages from main/docs
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            try {
+              const { data } = await github.rest.repos.getPages({ owner, repo });
+              console.log('Pages already configured:', JSON.stringify(data, null, 2));
+              // Ensure source is main/docs
+              try {
+                await github.rest.repos.updateInformationAboutPagesSite({
+                  owner,
+                  repo,
+                  build_type: 'legacy',
+                  source: { branch: 'main', path: '/docs' },
+                });
+                console.log('Updated Pages source to main/docs');
+              } catch (e) {
+                console.log('Update skipped/failed:', e.message);
+              }
+            } catch (err) {
+              if (err.status !== 404) throw err;
+              console.log('Pages not found; creating...');
+              const created = await github.rest.repos.createPagesSite({
+                owner,
+                repo,
+                build_type: 'legacy',
+                source: { branch: 'main', path: '/docs' },
+              });
+              console.log('Created Pages:', JSON.stringify(created.data, null, 2));
+            }

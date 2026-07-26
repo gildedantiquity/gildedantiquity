@@ -1,0 +1,64 @@
+name: Daily blog posts
+
+on:
+  schedule:
+    # Setiap hari 08:00 WIB (01:00 UTC) — buat 3 artikel
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Tanggal target YYYY-MM-DD (kosongkan = hari ini WIB)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-posts
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate 3 posts for the day
+        env:
+          INPUT_DATE: ${{ github.event.inputs.date }}
+        run: |
+          set -euo pipefail
+          if [ -n "${INPUT_DATE:-}" ]; then
+            python3 scripts/generate_daily_posts.py --date "$INPUT_DATE" --count 3
+          else
+            python3 scripts/generate_daily_posts.py --count 3
+          fi
+
+      - name: Commit and push new posts
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add site/content/posts/*.md
+          if git diff --staged --quiet; then
+            echo "No new posts to commit."
+            exit 0
+          fi
+
+          DAY="${{ github.event.inputs.date }}"
+          if [ -z "${DAY}" ]; then
+            DAY="$(TZ=Asia/Jakarta date +%F)"
+          fi
+
+          git commit -m "content: add 3 daily Agentic AI posts (${DAY})"
+          git push origin HEAD:${{ github.ref_name }}

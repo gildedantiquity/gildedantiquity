@@ -1,6 +1,6 @@
 ---
 title: "Tool Use & Function Calling untuk Otomasi Nyata"
-date: 2026-07-28T08:00:00+07:00
+date: 2026-07-26T09:00:00+07:00
 draft: false
 theme: Teknik
 readingTime: 8

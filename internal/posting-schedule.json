@@ -1,219 +1,3672 @@
 {
   "timezone": "Asia/Jakarta",
-  "cadence": "Setiap hari pukul 08:00 WIB",
+  "cadence": "Setiap hari pukul 08:00 WIB — 3 artikel",
+  "posts_per_day": 3,
   "series": "Agentic AI Automation",
+  "visibility": "internal",
+  "note": "Jangan dipublish ke GitHub Pages. Digunakan generator harian dan perencanaan editorial.",
   "posts": [
     {
-      "date": "2026-07-26",
       "title": "Apa Itu Agentic AI Automation?",
       "slug": "apa-itu-agentic-ai",
       "theme": "Fondasi",
-      "summary": "Definisi, bedanya dengan chatbot, dan kenapa otomasi berbasis agen sedang naik."
+      "summary": "Definisi, bedanya dengan chatbot, dan kenapa otomasi berbasis agen sedang naik.",
+      "lede": "Chatbot menjawab pertanyaan. Agen menyelesaikan pekerjaan.",
+      "sections": [
+        {
+          "heading": "Definisi kerja",
+          "intro": "Pahami batas antara generation dan automation.",
+          "points": [
+            "Goal-oriented outcome",
+            "Tool-mediated actions",
+            "Looped evaluate-retry"
+          ],
+          "takeaway": "Pakai definisi operasional, bukan jargon demo."
+        },
+        {
+          "heading": "Kapan memakai agen",
+          "intro": "Pilih masalah yang cocok dengan ketidakpastian bertingkat.",
+          "points": [
+            "Multi-langkah kondisional",
+            "Multi-sistem",
+            "Butuh guardrails"
+          ],
+          "takeaway": "Rule engine tetap juara untuk proses deterministic."
+        },
+        {
+          "heading": "Anti-pola",
+          "intro": "Hindari agen untuk semua masalah.",
+          "points": [
+            "Prompt panjang tanpa tools",
+            "Tanpa stop condition",
+            "Supertool tak terbatas"
+          ]
+        }
+      ],
+      "date": "2026-07-26",
+      "slot": 1
     },
     {
-      "date": "2026-07-27",
       "title": "Perceive–Plan–Act: Anatomi Satu Loop Agen",
       "slug": "perceive-plan-act",
       "theme": "Fondasi",
-      "summary": "Cara kerja siklus inti agen: mengamati, merencanakan, lalu bertindak."
+      "summary": "Cara kerja siklus inti agen: mengamati, merencanakan, lalu bertindak.",
+      "lede": "Hampir semua sistem agentic yang berguna adalah loop tiga tahap.",
+      "sections": [
+        {
+          "heading": "Perceive",
+          "intro": "Baca state dunia apa adanya.",
+          "points": [
+            "Normalisasi input",
+            "Tandai ketidakpastian",
+            "Ambil sinyal relevan"
+          ]
+        },
+        {
+          "heading": "Plan",
+          "intro": "Ubah goal menjadi langkah terukur.",
+          "points": [
+            "Kriteria selesai",
+            "Urutan tools",
+            "Titik approval"
+          ]
+        },
+        {
+          "heading": "Act & stop",
+          "intro": "Eksekusi dengan kontrak dan batas.",
+          "points": [
+            "Schema I/O",
+            "Max iterasi",
+            "Budget token"
+          ]
+        }
+      ],
+      "date": "2026-07-26",
+      "slot": 2
     },
     {
-      "date": "2026-07-28",
       "title": "Tool Use & Function Calling untuk Otomasi Nyata",
       "slug": "tool-use-function-calling",
       "theme": "Teknik",
-      "summary": "Menghubungkan LLM ke API, browser, dan sistem internal secara aman."
+      "summary": "Menghubungkan LLM ke API, browser, dan sistem internal secara aman.",
+      "lede": "Tanpa tools, agen hanya bercerita tentang pekerjaan.",
+      "sections": [
+        {
+          "heading": "Kontrak tool",
+          "intro": "Schema lebih penting dari prompt yang puitis.",
+          "points": [
+            "Nama jelas",
+            "Tipe ketat",
+            "Error berguna"
+          ]
+        },
+        {
+          "heading": "Lapisan izin",
+          "intro": "Kelompokkan tools menurut risiko.",
+          "points": [
+            "Read default",
+            "Write draft + log",
+            "Mutate + HITL"
+          ]
+        },
+        {
+          "heading": "Checklist produksi",
+          "intro": "Siapkan sebelum go-live.",
+          "points": [
+            "Allowlist",
+            "Timeout/retry",
+            "Redaksi secret"
+          ]
+        }
+      ],
+      "date": "2026-07-26",
+      "slot": 3
     },
     {
-      "date": "2026-07-29",
       "title": "Memory untuk Agen: Short-term, Long-term, dan Episodic",
       "slug": "memory-untuk-agen",
       "theme": "Teknik",
-      "summary": "Strategi menyimpan konteks agar agen tidak amnesia tiap sesi."
+      "summary": "Strategi menyimpan konteks agar agen tidak amnesia tiap sesi.",
+      "lede": "Agen tanpa memori mengulang kesalahan yang sama setiap pagi.",
+      "sections": [
+        {
+          "heading": "Jenis memori",
+          "intro": "Pilih jenis sesuai horizon tugas.",
+          "points": [
+            "Short-term: konteks percakapan",
+            "Long-term: profil/fakta",
+            "Episodic: jejak tugas"
+          ]
+        },
+        {
+          "heading": "Desain penyimpanan",
+          "intro": "Pisahkan memori dari prompt mentah.",
+          "points": [
+            "Embedding store",
+            "Key-value facts",
+            "TTL & privasi"
+          ]
+        },
+        {
+          "heading": "Evaluasi memori",
+          "intro": "Ukur recall yang berguna, bukan sekadar ukuran index.",
+          "points": [
+            "Hit rate fakta kritis",
+            "Hallucinated memory",
+            "Biaya retrieval"
+          ]
+        }
+      ],
+      "date": "2026-07-27",
+      "slot": 1
     },
     {
-      "date": "2026-07-30",
       "title": "Prompt vs Policy: Menulis Instruksi yang Bisa Dieksekusi",
       "slug": "prompt-vs-policy",
       "theme": "Teknik",
-      "summary": "Dari prompt longgar ke kebijakan operasional yang jelas dan teruji."
+      "summary": "Dari prompt longgar ke kebijakan operasional yang jelas dan teruji.",
+      "lede": "Prompt adalah niat; policy adalah kontrak yang bisa diaudit.",
+      "sections": [
+        {
+          "heading": "Batas prompt",
+          "intro": "Prompt saja tidak cukup untuk produksi.",
+          "points": [
+            "Non-deterministik",
+            "Sulit diuji",
+            "Mudah di-bypass"
+          ]
+        },
+        {
+          "heading": "Isi policy",
+          "intro": "Tulis aturan yang bisa dicek mesin.",
+          "points": [
+            "Tools boleh/tidak",
+            "Escalation",
+            "Format keluaran"
+          ]
+        },
+        {
+          "heading": "Uji policy",
+          "intro": "Perlakukan seperti kode.",
+          "points": [
+            "Fixture skenario",
+            "Regression suite",
+            "Versioning"
+          ]
+        }
+      ],
+      "date": "2026-07-27",
+      "slot": 2
     },
     {
-      "date": "2026-07-31",
       "title": "Multi-Agent: Kapan Satu Agen Tidak Cukup",
       "slug": "multi-agent-kapan",
       "theme": "Arsitektur",
-      "summary": "Pola orkestrasi researcher–executor–reviewer untuk tugas kompleks."
+      "summary": "Pola orkestrasi researcher–executor–reviewer untuk tugas kompleks.",
+      "lede": "Tambah agen hanya jika pembagian peran menurunkan error, bukan ego arsitektur.",
+      "sections": [
+        {
+          "heading": "Sinyal butuh multi-agen",
+          "intro": "Kompleksitas peran vs kompleksitas tugas.",
+          "points": [
+            "Konflik objective",
+            "Butuh review independen",
+            "Parallel research"
+          ]
+        },
+        {
+          "heading": "Pola orkestrasi",
+          "intro": "Mulai dari pola sederhana.",
+          "points": [
+            "Supervisor-worker",
+            "Pipeline stages",
+            "Debate terbatas"
+          ]
+        },
+        {
+          "heading": "Biaya koordinasi",
+          "intro": "Setiap hop antar-agen punya harga.",
+          "points": [
+            "Token overhead",
+            "Latency",
+            "Failure propagation"
+          ]
+        }
+      ],
+      "date": "2026-07-27",
+      "slot": 3
     },
     {
-      "date": "2026-08-01",
       "title": "Human-in-the-Loop tanpa Membunuh Otomasi",
       "slug": "human-in-the-loop",
       "theme": "Operasional",
-      "summary": "Titik approval yang tepat agar tetap cepat tapi terkendali."
+      "summary": "Titik approval yang tepat agar tetap cepat tapi terkendali.",
+      "lede": "HITL yang berlebihan jadi antrean manual; yang kurang jadi insiden.",
+      "sections": [
+        {
+          "heading": "Pilih titik approval",
+          "intro": "Approve outcome berisiko, bukan setiap langkah.",
+          "points": [
+            "Mutasi data",
+            "Komunikasi eksternal",
+            "Biaya di atas ambang"
+          ]
+        },
+        {
+          "heading": "UX reviewer",
+          "intro": "Buat keputusan manusia cepat.",
+          "points": [
+            "Ringkas bukti",
+            "Satu klik approve/reject",
+            "Timeout policy"
+          ]
+        },
+        {
+          "heading": "Ukur friksi",
+          "intro": "Pantau bottleneck manusia.",
+          "points": [
+            "Time-to-approve",
+            "% auto-resolved",
+            "False escalation"
+          ]
+        }
+      ],
+      "date": "2026-07-28",
+      "slot": 1
     },
     {
-      "date": "2026-08-02",
       "title": "Evaluasi Agen: Success Rate, Cost, dan Latency",
       "slug": "evaluasi-agen",
       "theme": "Operasional",
-      "summary": "Metrik yang harus Anda ukur sebelum men-scale otomasi."
+      "summary": "Metrik yang harus Anda ukur sebelum men-scale otomasi.",
+      "lede": "Tanpa evaluasi, yang Anda scale hanyalah ketidakpastian.",
+      "sections": [
+        {
+          "heading": "Metrik inti",
+          "intro": "Pilih sedikit angka yang menuntun keputusan.",
+          "points": [
+            "Task success",
+            "Cost/task",
+            "p95 latency"
+          ]
+        },
+        {
+          "heading": "Dataset skenario",
+          "intro": "Evaluasi butuh kasus, bukan vibes.",
+          "points": [
+            "Happy path",
+            "Tool failure",
+            "Adversarial input"
+          ]
+        },
+        {
+          "heading": "Gate rilis",
+          "intro": "Larang deploy jika regresi metrik.",
+          "points": [
+            "Threshold minimum",
+            "Canary",
+            "Rollback plan"
+          ]
+        }
+      ],
+      "date": "2026-07-28",
+      "slot": 2
     },
     {
-      "date": "2026-08-03",
       "title": "Observability: Melacak Jejak Keputusan Agen",
       "slug": "observability-agen",
       "theme": "Operasional",
-      "summary": "Logging, traces, dan replay untuk debug perilaku non-deterministik."
+      "summary": "Logging, traces, dan replay untuk debug perilaku non-deterministik.",
+      "lede": "Kalau tidak bisa menjelaskan kenapa agen bertindak, Anda tidak bisa memperbaikinya.",
+      "sections": [
+        {
+          "heading": "Apa yang di-log",
+          "intro": "Jejak yang cukup untuk replay.",
+          "points": [
+            "Plan steps",
+            "Tool args/results",
+            "Policy decisions"
+          ]
+        },
+        {
+          "heading": "Privacy & redaksi",
+          "intro": "Observability jangan jadi kebocoran.",
+          "points": [
+            "Mask secret",
+            "PII policy",
+            "Retention"
+          ]
+        },
+        {
+          "heading": "Replay",
+          "intro": "Ulangi kegagalan dengan input yang sama.",
+          "points": [
+            "Deterministic harness",
+            "Fixture tools",
+            "Diff output"
+          ]
+        }
+      ],
+      "date": "2026-07-28",
+      "slot": 3
     },
     {
-      "date": "2026-08-04",
       "title": "Guardrails: Batas Aman untuk Aksi Otonom",
       "slug": "guardrails-agen",
       "theme": "Keamanan",
-      "summary": "Allowlist tools, budget token, dan kebijakan destructive action."
+      "summary": "Allowlist tools, budget token, dan kebijakan destructive action.",
+      "lede": "Otonomi tanpa pagar adalah risiko operasional, bukan inovasi.",
+      "sections": [
+        {
+          "heading": "Kontrol preventif",
+          "intro": "Cegah sebelum aksi terjadi.",
+          "points": [
+            "Allowlist",
+            "Arg validation",
+            "Rate limit"
+          ]
+        },
+        {
+          "heading": "Kontrol detective",
+          "intro": "Deteksi penyimpangan cepat.",
+          "points": [
+            "Anomaly cost",
+            "Unexpected tool",
+            "Loop detector"
+          ]
+        },
+        {
+          "heading": "Respons insiden",
+          "intro": "Siapkan tombol berhenti.",
+          "points": [
+            "Kill switch",
+            "Revoke creds",
+            "Postmortem template"
+          ]
+        }
+      ],
+      "date": "2026-07-29",
+      "slot": 1
     },
     {
-      "date": "2026-08-05",
       "title": "RAG untuk Agen: Dokumen sebagai Sensor Dunia",
       "slug": "rag-untuk-agen",
       "theme": "Teknik",
-      "summary": "Menggabungkan retrieval dengan perencanaan agar jawaban berbasis fakta."
+      "summary": "Menggabungkan retrieval dengan perencanaan agar jawaban berbasis fakta.",
+      "lede": "Menggabungkan retrieval dengan perencanaan agar jawaban berbasis fakta.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Menggabungkan retrieval dengan perencanaan agar jawaban berbasis fakta.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-07-29",
+      "slot": 2
     },
     {
-      "date": "2026-08-06",
       "title": "Browser Agents: Otomasi UI yang Rapuh tapi Powerful",
       "slug": "browser-agents",
       "theme": "Use Case",
-      "summary": "Kapan memakai browser agent, dan bagaimana menstabilkannya."
+      "summary": "Kapan memakai browser agent, dan bagaimana menstabilkannya.",
+      "lede": "Kapan memakai browser agent, dan bagaimana menstabilkannya.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Kapan memakai browser agent, dan bagaimana menstabilkannya.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-07-29",
+      "slot": 3
     },
     {
-      "date": "2026-08-07",
       "title": "Workflow Engine + LLM: Teman, Bukan Saingan",
       "slug": "workflow-engine-llm",
       "theme": "Arsitektur",
-      "summary": "Memadukan n8n/Temporal dengan kemampuan reasoning agen."
+      "summary": "Memadukan n8n/Temporal dengan kemampuan reasoning agen.",
+      "lede": "Memadukan n8n/Temporal dengan kemampuan reasoning agen.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Memadukan n8n/Temporal dengan kemampuan reasoning agen.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-07-30",
+      "slot": 1
     },
     {
-      "date": "2026-08-08",
       "title": "Cost Control: Budget Token per Tugas",
       "slug": "cost-control-agen",
       "theme": "Operasional",
-      "summary": "Teknik membatasi loop agar otomasi tidak menghabiskan kuota."
+      "summary": "Teknik membatasi loop agar otomasi tidak menghabiskan kuota.",
+      "lede": "Teknik membatasi loop agar otomasi tidak menghabiskan kuota.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Teknik membatasi loop agar otomasi tidak menghabiskan kuota.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-07-30",
+      "slot": 2
     },
     {
-      "date": "2026-08-09",
       "title": "Failure Modes Agen yang Paling Sering Muncul",
       "slug": "failure-modes-agen",
       "theme": "Operasional",
-      "summary": "Hallucinated tools, infinite loops, dan silent wrong answers."
+      "summary": "Hallucinated tools, infinite loops, dan silent wrong answers.",
+      "lede": "Hallucinated tools, infinite loops, dan silent wrong answers.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Hallucinated tools, infinite loops, dan silent wrong answers.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-07-30",
+      "slot": 3
     },
     {
-      "date": "2026-08-10",
       "title": "Desain State Machine untuk Agen Produksi",
       "slug": "state-machine-agen",
       "theme": "Arsitektur",
-      "summary": "Menjadikan perilaku agen eksplisit dengan state dan transisi."
+      "summary": "Menjadikan perilaku agen eksplisit dengan state dan transisi.",
+      "lede": "Menjadikan perilaku agen eksplisit dengan state dan transisi.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Menjadikan perilaku agen eksplisit dengan state dan transisi.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-07-31",
+      "slot": 1
     },
     {
-      "date": "2026-08-11",
       "title": "Testing Agen: Unit, Scenario, dan Replay",
       "slug": "testing-agen",
       "theme": "Engineering",
-      "summary": "Cara menguji sistem non-deterministik dengan dataset skenario."
+      "summary": "Cara menguji sistem non-deterministik dengan dataset skenario.",
+      "lede": "Cara menguji sistem non-deterministik dengan dataset skenario.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Cara menguji sistem non-deterministik dengan dataset skenario.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-07-31",
+      "slot": 2
     },
     {
-      "date": "2026-08-12",
       "title": "Agentic CI: Review PR dan Triage Issue Otomatis",
       "slug": "agentic-ci",
       "theme": "Use Case",
-      "summary": "Pola otomasi engineering yang aman untuk repo harian."
+      "summary": "Pola otomasi engineering yang aman untuk repo harian.",
+      "lede": "Pola otomasi engineering yang aman untuk repo harian.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Pola otomasi engineering yang aman untuk repo harian.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-07-31",
+      "slot": 3
     },
     {
-      "date": "2026-08-13",
       "title": "Customer Support Agent yang Tidak Membuat Marah User",
       "slug": "support-agent",
       "theme": "Use Case",
-      "summary": "Escalation policy, tone control, dan batas klaim."
+      "summary": "Escalation policy, tone control, dan batas klaim.",
+      "lede": "Escalation policy, tone control, dan batas klaim.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Escalation policy, tone control, dan batas klaim.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-01",
+      "slot": 1
     },
     {
-      "date": "2026-08-14",
       "title": "Data Pipeline Agent: dari Inbox ke Insight",
       "slug": "data-pipeline-agent",
       "theme": "Use Case",
-      "summary": "Agen yang mengekstrak, membersihkan, dan merangkum data operasional."
+      "summary": "Agen yang mengekstrak, membersihkan, dan merangkum data operasional.",
+      "lede": "Agen yang mengekstrak, membersihkan, dan merangkum data operasional.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Agen yang mengekstrak, membersihkan, dan merangkum data operasional.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-01",
+      "slot": 2
     },
     {
-      "date": "2026-08-15",
       "title": "Personal Productivity Agent tanpa Kehilangan Privasi",
       "slug": "personal-productivity-agent",
       "theme": "Use Case",
-      "summary": "Local-first tools, sandboxed actions, dan consent yang jelas."
+      "summary": "Local-first tools, sandboxed actions, dan consent yang jelas.",
+      "lede": "Local-first tools, sandboxed actions, dan consent yang jelas.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Local-first tools, sandboxed actions, dan consent yang jelas.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-01",
+      "slot": 3
     },
     {
-      "date": "2026-08-16",
       "title": "Model Routing: Kapan Pakai Model Kecil vs Besar",
       "slug": "model-routing",
       "theme": "Teknik",
-      "summary": "Routing cerdas untuk menekan biaya tanpa menjatuhkan kualitas."
+      "summary": "Routing cerdas untuk menekan biaya tanpa menjatuhkan kualitas.",
+      "lede": "Routing cerdas untuk menekan biaya tanpa menjatuhkan kualitas.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Routing cerdas untuk menekan biaya tanpa menjatuhkan kualitas.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-02",
+      "slot": 1
     },
     {
-      "date": "2026-08-17",
       "title": "Structured Output: JSON Schema sebagai Kontrak Agen",
       "slug": "structured-output",
       "theme": "Teknik",
-      "summary": "Membuat keluaran agen bisa diandalkan sistem hilir."
+      "summary": "Membuat keluaran agen bisa diandalkan sistem hilir.",
+      "lede": "Membuat keluaran agen bisa diandalkan sistem hilir.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Membuat keluaran agen bisa diandalkan sistem hilir.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-02",
+      "slot": 2
     },
     {
-      "date": "2026-08-18",
       "title": "Self-Reflection: Agen yang Mengoreksi Dirinya Sendiri",
       "slug": "self-reflection",
       "theme": "Teknik",
-      "summary": "Pola critique–revise dan batas kapan harus berhenti."
+      "summary": "Pola critique–revise dan batas kapan harus berhenti.",
+      "lede": "Pola critique–revise dan batas kapan harus berhenti.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Pola critique–revise dan batas kapan harus berhenti.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-02",
+      "slot": 3
     },
     {
-      "date": "2026-08-19",
       "title": "Keamanan Prompt Injection di Sistem Berbasis Tools",
       "slug": "prompt-injection",
       "theme": "Keamanan",
-      "summary": "Ancaman klasik dan mitigasi praktis untuk otomasi agen."
+      "summary": "Ancaman klasik dan mitigasi praktis untuk otomasi agen.",
+      "lede": "Ancaman klasik dan mitigasi praktis untuk otomasi agen.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Ancaman klasik dan mitigasi praktis untuk otomasi agen.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-03",
+      "slot": 1
     },
     {
-      "date": "2026-08-20",
       "title": "Permissions Model: Least Privilege untuk Agen",
       "slug": "permissions-model",
       "theme": "Keamanan",
-      "summary": "Credential scoping, ephemeral tokens, dan audit trail."
+      "summary": "Credential scoping, ephemeral tokens, dan audit trail.",
+      "lede": "Credential scoping, ephemeral tokens, dan audit trail.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Credential scoping, ephemeral tokens, dan audit trail.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-03",
+      "slot": 2
     },
     {
-      "date": "2026-08-21",
       "title": "Deploy Agen: dari Notebook ke Service 24/7",
       "slug": "deploy-agen",
       "theme": "Engineering",
-      "summary": "Pola deployment, queue, retry, dan idempotency."
+      "summary": "Pola deployment, queue, retry, dan idempotency.",
+      "lede": "Pola deployment, queue, retry, dan idempotency.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Pola deployment, queue, retry, dan idempotency.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-03",
+      "slot": 3
     },
     {
-      "date": "2026-08-22",
       "title": "Productizing Agent: dari Demo Keren ke Fitur Andal",
       "slug": "productizing-agent",
       "theme": "Produk",
-      "summary": "Checklist produk untuk mengubah eksperimen menjadi value."
+      "summary": "Checklist produk untuk mengubah eksperimen menjadi value.",
+      "lede": "Checklist produk untuk mengubah eksperimen menjadi value.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Checklist produk untuk mengubah eksperimen menjadi value.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-04",
+      "slot": 1
     },
     {
-      "date": "2026-08-23",
       "title": "KPI Bisnis untuk Otomasi Agentic",
       "slug": "kpi-bisnis-agentic",
       "theme": "Produk",
-      "summary": "Mengukur dampak: waktu hemat, error rate, dan kepuasan."
+      "summary": "Mengukur dampak: waktu hemat, error rate, dan kepuasan.",
+      "lede": "Mengukur dampak: waktu hemat, error rate, dan kepuasan.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Mengukur dampak: waktu hemat, error rate, dan kepuasan.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-04",
+      "slot": 2
     },
     {
-      "date": "2026-08-24",
       "title": "Roadmap 90 Hari Membangun Tim Agentic AI",
       "slug": "roadmap-90-hari",
       "theme": "Strategi",
-      "summary": "Urutan investasi skill, tooling, dan use case prioritas."
+      "summary": "Urutan investasi skill, tooling, dan use case prioritas.",
+      "lede": "Urutan investasi skill, tooling, dan use case prioritas.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Urutan investasi skill, tooling, dan use case prioritas.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-04",
+      "slot": 3
+    },
+    {
+      "title": "Caching Hasil Tool untuk Loop yang Hemat",
+      "slug": "caching-tool-results",
+      "theme": "Teknik",
+      "summary": "Hindari panggilan berulang yang membuang biaya dan waktu.",
+      "lede": "Hindari panggilan berulang yang membuang biaya dan waktu.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Hindari panggilan berulang yang membuang biaya dan waktu.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-05",
+      "slot": 1
+    },
+    {
+      "title": "Idempotency Keys di Aksi Agen",
+      "slug": "idempotency-agen",
+      "theme": "Engineering",
+      "summary": "Supaya retry tidak menciptakan efek samping ganda.",
+      "lede": "Supaya retry tidak menciptakan efek samping ganda.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Supaya retry tidak menciptakan efek samping ganda.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-05",
+      "slot": 2
+    },
+    {
+      "title": "Queue Design untuk Pekerjaan Agentic",
+      "slug": "queue-design-agen",
+      "theme": "Arsitektur",
+      "summary": "Backpressure, priority, dan dead-letter untuk tugas agen.",
+      "lede": "Backpressure, priority, dan dead-letter untuk tugas agen.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Backpressure, priority, dan dead-letter untuk tugas agen.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-05",
+      "slot": 3
+    },
+    {
+      "title": "Prompt Injection via Retrieved Documents",
+      "slug": "injection-via-rag",
+      "theme": "Keamanan",
+      "summary": "Dokumen berbahaya sebagai vektor serangan pada agen RAG.",
+      "lede": "Dokumen berbahaya sebagai vektor serangan pada agen RAG.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Dokumen berbahaya sebagai vektor serangan pada agen RAG.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-06",
+      "slot": 1
+    },
+    {
+      "title": "Eval Harness Mini untuk Tim Kecil",
+      "slug": "eval-harness-mini",
+      "theme": "Engineering",
+      "summary": "Membangun evaluasi mingguan tanpa platform mahal.",
+      "lede": "Membangun evaluasi mingguan tanpa platform mahal.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Membangun evaluasi mingguan tanpa platform mahal.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-06",
+      "slot": 2
+    },
+    {
+      "title": "Agent Handoff ke Manusia yang Tidak Frustrasi",
+      "slug": "agent-handoff",
+      "theme": "Operasional",
+      "summary": "Konteks lengkap saat eskalasi agar user tidak mengulang cerita.",
+      "lede": "Konteks lengkap saat eskalasi agar user tidak mengulang cerita.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Konteks lengkap saat eskalasi agar user tidak mengulang cerita.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-06",
+      "slot": 3
+    },
+    {
+      "title": "Telemetry Budget: Berapa Banyak Jejak yang Cukup",
+      "slug": "telemetry-budget",
+      "theme": "Operasional",
+      "summary": "Kompromi antara debugability dan biaya penyimpanan log.",
+      "lede": "Kompromi antara debugability dan biaya penyimpanan log.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Kompromi antara debugability dan biaya penyimpanan log.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-07",
+      "slot": 1
+    },
+    {
+      "title": "Versioning Tools dan Breaking Changes",
+      "slug": "versioning-tools",
+      "theme": "Engineering",
+      "summary": "Menjaga agen tetap jalan saat skema tool berubah.",
+      "lede": "Menjaga agen tetap jalan saat skema tool berubah.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Menjaga agen tetap jalan saat skema tool berubah.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-07",
+      "slot": 2
+    },
+    {
+      "title": "Sandboxing Eksekusi Kode Agen",
+      "slug": "sandboxing-kode-agen",
+      "theme": "Keamanan",
+      "summary": "Batas CPU, jaringan, dan filesystem untuk code tools.",
+      "lede": "Batas CPU, jaringan, dan filesystem untuk code tools.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Batas CPU, jaringan, dan filesystem untuk code tools.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-07",
+      "slot": 3
+    },
+    {
+      "title": "Desain Persona vs Desain Capability",
+      "slug": "persona-vs-capability",
+      "theme": "Produk",
+      "summary": "Persona membantu UX; capability menentukan risiko.",
+      "lede": "Persona membantu UX; capability menentukan risiko.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Persona membantu UX; capability menentukan risiko.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-08",
+      "slot": 1
+    },
+    {
+      "title": "Batch vs Online Agent Workloads",
+      "slug": "batch-vs-online",
+      "theme": "Arsitektur",
+      "summary": "Pilih mode eksekusi sesuai SLA dan biaya.",
+      "lede": "Pilih mode eksekusi sesuai SLA dan biaya.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Pilih mode eksekusi sesuai SLA dan biaya.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-08",
+      "slot": 2
+    },
+    {
+      "title": "Cold Start Agen di Request Pertama",
+      "slug": "cold-start-agen",
+      "theme": "Engineering",
+      "summary": "Warmup, cache policy, dan fallback cepat.",
+      "lede": "Warmup, cache policy, dan fallback cepat.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Warmup, cache policy, dan fallback cepat.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-08",
+      "slot": 3
+    },
+    {
+      "title": "Kontrak SLA untuk Fitur Agentic",
+      "slug": "sla-agentic",
+      "theme": "Produk",
+      "summary": "Janji layanan yang realistis untuk sistem non-deterministik.",
+      "lede": "Janji layanan yang realistis untuk sistem non-deterministik.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Janji layanan yang realistis untuk sistem non-deterministik.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-09",
+      "slot": 1
+    },
+    {
+      "title": "Dokumentasi Runbook untuk Oncall Agen",
+      "slug": "runbook-agen",
+      "theme": "Operasional",
+      "summary": "Langkah darurat saat agen salah bertindak di produksi.",
+      "lede": "Langkah darurat saat agen salah bertindak di produksi.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Langkah darurat saat agen salah bertindak di produksi.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-09",
+      "slot": 2
+    },
+    {
+      "title": "A/B Testing Prompt dan Policy",
+      "slug": "ab-testing-policy",
+      "theme": "Produk",
+      "summary": "Eksperimen terkendali tanpa merusak kepercayaan user.",
+      "lede": "Eksperimen terkendali tanpa merusak kepercayaan user.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Eksperimen terkendali tanpa merusak kepercayaan user.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-09",
+      "slot": 3
+    },
+    {
+      "title": "Deteksi Infinite Loop secara Real-time",
+      "slug": "detect-infinite-loop",
+      "theme": "Operasional",
+      "summary": "Sinyal pengulangan rencana/tool yang harus mematikan tugas.",
+      "lede": "Sinyal pengulangan rencana/tool yang harus mematikan tugas.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Sinyal pengulangan rencana/tool yang harus mematikan tugas.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-10",
+      "slot": 1
+    },
+    {
+      "title": "Komposisi Skill Modular untuk Agen",
+      "slug": "skill-modular",
+      "theme": "Arsitektur",
+      "summary": "Pisahkan kemampuan agar bisa diuji dan diganti.",
+      "lede": "Pisahkan kemampuan agar bisa diuji dan diganti.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Pisahkan kemampuan agar bisa diuji dan diganti.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-10",
+      "slot": 2
+    },
+    {
+      "title": "FinOps untuk LLM Agents",
+      "slug": "finops-llm-agents",
+      "theme": "Operasional",
+      "summary": "Anggaran bulanan, alert spike, dan chargeback per tim.",
+      "lede": "Anggaran bulanan, alert spike, dan chargeback per tim.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Anggaran bulanan, alert spike, dan chargeback per tim.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-10",
+      "slot": 3
+    },
+    {
+      "title": "Privacy by Design pada Agen Perusahaan",
+      "slug": "privacy-by-design-agen",
+      "theme": "Keamanan",
+      "summary": "Minimasi data, purpose limitation, dan audit akses.",
+      "lede": "Minimasi data, purpose limitation, dan audit akses.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Minimasi data, purpose limitation, dan audit akses.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-11",
+      "slot": 1
+    },
+    {
+      "title": "From Chat UX to Background Automation",
+      "slug": "chat-to-background",
+      "theme": "Produk",
+      "summary": "Kapan interaksi harus sinkron, kapan cukup notifikasi.",
+      "lede": "Kapan interaksi harus sinkron, kapan cukup notifikasi.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Kapan interaksi harus sinkron, kapan cukup notifikasi.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-11",
+      "slot": 2
+    },
+    {
+      "title": "Contract Testing antara Agen dan API Internal",
+      "slug": "contract-testing-agen",
+      "theme": "Engineering",
+      "summary": "Cegah break saat backend berubah diam-diam.",
+      "lede": "Cegah break saat backend berubah diam-diam.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Cegah break saat backend berubah diam-diam.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-11",
+      "slot": 3
+    },
+    {
+      "title": "Prioritas Backlog Otomasi Agentic",
+      "slug": "prioritas-backlog-agen",
+      "theme": "Strategi",
+      "summary": "Skor dampak × kesiapan data × risiko untuk memilih use case.",
+      "lede": "Skor dampak × kesiapan data × risiko untuk memilih use case.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Skor dampak × kesiapan data × risiko untuk memilih use case.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-12",
+      "slot": 1
+    },
+    {
+      "title": "Mengukur Trust User terhadap Agen",
+      "slug": "mengukur-trust-agen",
+      "theme": "Produk",
+      "summary": "Survei singkat, override rate, dan repeat usage.",
+      "lede": "Survei singkat, override rate, dan repeat usage.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Survei singkat, override rate, dan repeat usage.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-12",
+      "slot": 2
+    },
+    {
+      "title": "Pola Retry yang Aman untuk Side Effects",
+      "slug": "retry-aman",
+      "theme": "Engineering",
+      "summary": "Backoff, jitter, dan batas upaya pada aksi bermutasi.",
+      "lede": "Backoff, jitter, dan batas upaya pada aksi bermutasi.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Backoff, jitter, dan batas upaya pada aksi bermutasi.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-12",
+      "slot": 3
+    },
+    {
+      "title": "Catalog Tools Internal untuk Banyak Agen",
+      "slug": "catalog-tools",
+      "theme": "Arsitektur",
+      "summary": "Satu registri tools dengan metadata risiko dan pemilik.",
+      "lede": "Satu registri tools dengan metadata risiko dan pemilik.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Satu registri tools dengan metadata risiko dan pemilik.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-13",
+      "slot": 1
+    },
+    {
+      "title": "Shadow Mode: Jalankan Agen tanpa Efek Samping",
+      "slug": "shadow-mode-agen",
+      "theme": "Operasional",
+      "summary": "Bandingkan usulan agen dengan aksi manusia sebelum cutover.",
+      "lede": "Bandingkan usulan agen dengan aksi manusia sebelum cutover.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Bandingkan usulan agen dengan aksi manusia sebelum cutover.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-13",
+      "slot": 2
+    },
+    {
+      "title": "Postmortem Template Khusus Insiden Agen",
+      "slug": "postmortem-agen",
+      "theme": "Operasional",
+      "summary": "Fokus pada plan, tool, policy—bukan menyalahkan model saja.",
+      "lede": "Fokus pada plan, tool, policy—bukan menyalahkan model saja.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Fokus pada plan, tool, policy—bukan menyalahkan model saja.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-13",
+      "slot": 3
+    },
+    {
+      "title": "Desain Notifikasi dari Agen yang Tidak Spam",
+      "slug": "notifikasi-agen",
+      "theme": "Produk",
+      "summary": "Threshold, digest, dan mute rules agar sinyal tetap berarti.",
+      "lede": "Threshold, digest, dan mute rules agar sinyal tetap berarti.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Threshold, digest, dan mute rules agar sinyal tetap berarti.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-14",
+      "slot": 1
+    },
+    {
+      "title": "Multimodal Inputs untuk Agen Operasional",
+      "slug": "multimodal-agen",
+      "theme": "Teknik",
+      "summary": "Gambar, PDF, dan log sebagai observasi—bukan sekadar teks chat.",
+      "lede": "Gambar, PDF, dan log sebagai observasi—bukan sekadar teks chat.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Gambar, PDF, dan log sebagai observasi—bukan sekadar teks chat.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-14",
+      "slot": 2
+    },
+    {
+      "title": "Governance Model Release untuk Agent Changes",
+      "slug": "governance-release-agen",
+      "theme": "Strategi",
+      "summary": "Review policy, eval gate, dan komunikasi perubahan ke stakeholder.",
+      "lede": "Review policy, eval gate, dan komunikasi perubahan ke stakeholder.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Review policy, eval gate, dan komunikasi perubahan ke stakeholder.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-14",
+      "slot": 3
+    },
+    {
+      "title": "Offline Evaluation vs Online Monitoring",
+      "slug": "offline-vs-online-eval",
+      "theme": "Operasional",
+      "summary": "Kapan cukup dataset statis, kapan wajib monitor produksi.",
+      "lede": "Kapan cukup dataset statis, kapan wajib monitor produksi.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Kapan cukup dataset statis, kapan wajib monitor produksi.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-15",
+      "slot": 1
+    },
+    {
+      "title": "Agent Memory Hygiene dan Right to be Forgotten",
+      "slug": "memory-hygiene",
+      "theme": "Keamanan",
+      "summary": "Hapus/otomasi retensi memori sesuai permintaan dan regulasi.",
+      "lede": "Hapus/otomasi retensi memori sesuai permintaan dan regulasi.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Hapus/otomasi retensi memori sesuai permintaan dan regulasi.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-15",
+      "slot": 2
+    },
+    {
+      "title": "Pola Saga untuk Workflow Multi-Tool",
+      "slug": "saga-multi-tool",
+      "theme": "Arsitektur",
+      "summary": "Kompensasi langkah gagal agar state bisnis tetap konsisten.",
+      "lede": "Kompensasi langkah gagal agar state bisnis tetap konsisten.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Kompensasi langkah gagal agar state bisnis tetap konsisten.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-15",
+      "slot": 3
+    },
+    {
+      "title": "UI Affordance: Kapan User Harus Tahu Ini Agen",
+      "slug": "ui-affordance-agen",
+      "theme": "Produk",
+      "summary": "Transparansi yang membangun kepercayaan tanpa menakut-nakuti.",
+      "lede": "Transparansi yang membangun kepercayaan tanpa menakut-nakuti.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Transparansi yang membangun kepercayaan tanpa menakut-nakuti.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-16",
+      "slot": 1
+    },
+    {
+      "title": "Benchmark Internal yang Tidak Bocor ke Vendor",
+      "slug": "benchmark-internal",
+      "theme": "Engineering",
+      "summary": "Set evaluasi milik sendiri untuk membandingkan model/tools.",
+      "lede": "Set evaluasi milik sendiri untuk membandingkan model/tools.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Set evaluasi milik sendiri untuk membandingkan model/tools.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-16",
+      "slot": 2
+    },
+    {
+      "title": "Incident Sev Levels untuk Kegagalan Agen",
+      "slug": "sev-levels-agen",
+      "theme": "Operasional",
+      "summary": "Klasifikasi dampak bisnis agar respons proporsional.",
+      "lede": "Klasifikasi dampak bisnis agar respons proporsional.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Klasifikasi dampak bisnis agar respons proporsional.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-16",
+      "slot": 3
+    },
+    {
+      "title": "Migrasi dari Script Otomasi ke Agentic Workflow",
+      "slug": "migrasi-script-ke-agen",
+      "theme": "Strategi",
+      "summary": "Langkah bertahap tanpa big-bang rewrite.",
+      "lede": "Langkah bertahap tanpa big-bang rewrite.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Langkah bertahap tanpa big-bang rewrite.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-17",
+      "slot": 1
+    },
+    {
+      "title": "Kalibrasi Kepercayaan Diri Model pada Tool Choice",
+      "slug": "kalibrasi-tool-choice",
+      "theme": "Teknik",
+      "summary": "Kurangi pemanggilan tool yang salah karena overconfidence.",
+      "lede": "Kurangi pemanggilan tool yang salah karena overconfidence.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Kurangi pemanggilan tool yang salah karena overconfidence.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-17",
+      "slot": 2
+    },
+    {
+      "title": "Desain Fallback ke Proses Manual",
+      "slug": "fallback-manual",
+      "theme": "Operasional",
+      "summary": "Jalur cadangan yang sudah dilatih tim saat agen down.",
+      "lede": "Jalur cadangan yang sudah dilatih tim saat agen down.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Jalur cadangan yang sudah dilatih tim saat agen down.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-17",
+      "slot": 3
+    },
+    {
+      "title": "Mengikat KPI Agen ke OKR Tim",
+      "slug": "kpi-ke-okr",
+      "theme": "Strategi",
+      "summary": "Agar proyek agentic tidak berhenti di demo engineering.",
+      "lede": "Agar proyek agentic tidak berhenti di demo engineering.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Agar proyek agentic tidak berhenti di demo engineering.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-18",
+      "slot": 1
+    },
+    {
+      "title": "Pengelolaan Prompt Assets di Repo",
+      "slug": "prompt-assets-repo",
+      "theme": "Engineering",
+      "summary": "Struktur folder, review PR, dan semver untuk instruksi agen.",
+      "lede": "Struktur folder, review PR, dan semver untuk instruksi agen.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Struktur folder, review PR, dan semver untuk instruksi agen.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-18",
+      "slot": 2
+    },
+    {
+      "title": "Deteksi Drift Perilaku Agen Antar Versi Model",
+      "slug": "behavior-drift",
+      "theme": "Operasional",
+      "summary": "Monitor perubahan distribusi aksi setelah model upgrade.",
+      "lede": "Monitor perubahan distribusi aksi setelah model upgrade.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Monitor perubahan distribusi aksi setelah model upgrade.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-18",
+      "slot": 3
+    },
+    {
+      "title": "Keamanan Supply Chain untuk Plugin Agen",
+      "slug": "supply-chain-plugin",
+      "theme": "Keamanan",
+      "summary": "Pin versi, scan, dan izin minimum untuk ekstensi tools.",
+      "lede": "Pin versi, scan, dan izin minimum untuk ekstensi tools.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Pin versi, scan, dan izin minimum untuk ekstensi tools.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-19",
+      "slot": 1
+    },
+    {
+      "title": "Pola Event-Driven untuk Trigger Agen",
+      "slug": "event-driven-agen",
+      "theme": "Arsitektur",
+      "summary": "Webhook, queue, dan filter event sebelum memanggil model.",
+      "lede": "Webhook, queue, dan filter event sebelum memanggil model.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Webhook, queue, dan filter event sebelum memanggil model.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-19",
+      "slot": 2
+    },
+    {
+      "title": "Menulis Acceptance Criteria untuk Fitur Agen",
+      "slug": "acceptance-criteria-agen",
+      "theme": "Produk",
+      "summary": "Kriteria selesai yang bisa diuji meski output bervariasi.",
+      "lede": "Kriteria selesai yang bisa diuji meski output bervariasi.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Kriteria selesai yang bisa diuji meski output bervariasi.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-19",
+      "slot": 3
+    },
+    {
+      "title": "Cookbook Debugging: Agen Memanggil Tool Salah",
+      "slug": "debug-wrong-tool",
+      "theme": "Engineering",
+      "summary": "Langkah sistematis dari trace hingga perbaikan schema/prompt.",
+      "lede": "Langkah sistematis dari trace hingga perbaikan schema/prompt.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Langkah sistematis dari trace hingga perbaikan schema/prompt.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-20",
+      "slot": 1
+    },
+    {
+      "title": "Cookbook Debugging: Agen Looping Tanpa Progress",
+      "slug": "debug-looping",
+      "theme": "Engineering",
+      "summary": "Potong loop dengan sinyal progress dan budget.",
+      "lede": "Potong loop dengan sinyal progress dan budget.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Potong loop dengan sinyal progress dan budget.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-20",
+      "slot": 2
+    },
+    {
+      "title": "Desain Rate Limit per User dan per Tenant",
+      "slug": "rate-limit-tenant",
+      "theme": "Operasional",
+      "summary": "Lindungi biaya bersama tanpa menghukum usage wajar.",
+      "lede": "Lindungi biaya bersama tanpa menghukum usage wajar.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Lindungi biaya bersama tanpa menghukum usage wajar.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-20",
+      "slot": 3
+    },
+    {
+      "title": "Pemilihan Use Case Minggu Pertama",
+      "slug": "use-case-minggu-pertama",
+      "theme": "Strategi",
+      "summary": "Mulai dari tugas sempit berdata bersih dan risiko rendah.",
+      "lede": "Mulai dari tugas sempit berdata bersih dan risiko rendah.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Mulai dari tugas sempit berdata bersih dan risiko rendah.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-21",
+      "slot": 1
+    },
+    {
+      "title": "Mengarsipkan Percakapan Agen untuk Audit",
+      "slug": "arsip-audit-agen",
+      "theme": "Keamanan",
+      "summary": "Imutabilitas log dan akses berbasis peran.",
+      "lede": "Imutabilitas log dan akses berbasis peran.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Imutabilitas log dan akses berbasis peran.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-21",
+      "slot": 2
+    },
+    {
+      "title": "Kolaborasi Agen dengan Spreadsheet dan Docs",
+      "slug": "agen-docs-sheet",
+      "theme": "Use Case",
+      "summary": "Pola aman membaca/menulis artefak kantor sehari-hari.",
+      "lede": "Pola aman membaca/menulis artefak kantor sehari-hari.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Pola aman membaca/menulis artefak kantor sehari-hari.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-21",
+      "slot": 3
+    },
+    {
+      "title": "Synthetic Data untuk Memperkaya Eval Agen",
+      "slug": "synthetic-eval-data",
+      "theme": "Engineering",
+      "summary": "Generate kasus batas tanpa menunggu insiden nyata.",
+      "lede": "Generate kasus batas tanpa menunggu insiden nyata.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Generate kasus batas tanpa menunggu insiden nyata.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-22",
+      "slot": 1
+    },
+    {
+      "title": "Peta Kompetensi Tim untuk Era Agentic",
+      "slug": "peta-kompetensi-agen",
+      "theme": "Strategi",
+      "summary": "Peran eval, policy, dan product selain prompt engineer.",
+      "lede": "Peran eval, policy, dan product selain prompt engineer.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Peran eval, policy, dan product selain prompt engineer.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-22",
+      "slot": 2
+    },
+    {
+      "title": "Menutup Pilot yang Gagal dengan Belajar Jelas",
+      "slug": "menutup-pilot-gagal",
+      "theme": "Strategi",
+      "summary": "Kriteria stop dan dokumentasi pelajaran agar tidak mengulang.",
+      "lede": "Kriteria stop dan dokumentasi pelajaran agar tidak mengulang.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Kriteria stop dan dokumentasi pelajaran agar tidak mengulang.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-22",
+      "slot": 3
+    },
+    {
+      "title": "Integrasi Secret Manager dengan Runtime Agen",
+      "slug": "secret-manager-agen",
+      "theme": "Keamanan",
+      "summary": "Jangan ever inject long-lived key ke prompt.",
+      "lede": "Jangan ever inject long-lived key ke prompt.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Jangan ever inject long-lived key ke prompt.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-23",
+      "slot": 1
+    },
+    {
+      "title": "Desain Progress UI untuk Tugas Agen Lama",
+      "slug": "progress-ui-agen",
+      "theme": "Produk",
+      "summary": "Tahapan terlihat agar user tidak mengira sistem hang.",
+      "lede": "Tahapan terlihat agar user tidak mengira sistem hang.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Tahapan terlihat agar user tidak mengira sistem hang.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-23",
+      "slot": 2
+    },
+    {
+      "title": "Batch Summarization Agent untuk Knowledge Base",
+      "slug": "batch-summarization",
+      "theme": "Use Case",
+      "summary": "Pipeline ringkas dokumen dengan kontrol kualitas fakta.",
+      "lede": "Pipeline ringkas dokumen dengan kontrol kualitas fakta.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Pipeline ringkas dokumen dengan kontrol kualitas fakta.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-23",
+      "slot": 3
+    },
+    {
+      "title": "Policy-as-Code untuk Tim Platform AI",
+      "slug": "policy-as-code",
+      "theme": "Arsitektur",
+      "summary": "Satu sumber kebenaran aturan yang di-deploy bersama agen.",
+      "lede": "Satu sumber kebenaran aturan yang di-deploy bersama agen.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Satu sumber kebenaran aturan yang di-deploy bersama agen.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-24",
+      "slot": 1
+    },
+    {
+      "title": "Mengukur Opportunity Cost Menunda Otomasi",
+      "slug": "opportunity-cost-otomasi",
+      "theme": "Strategi",
+      "summary": "Hitung jam manusia vs risiko membangun agen sekarang.",
+      "lede": "Hitung jam manusia vs risiko membangun agen sekarang.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Hitung jam manusia vs risiko membangun agen sekarang.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-24",
+      "slot": 2
+    },
+    {
+      "title": "Pola Dual Control untuk Aksi Finansial",
+      "slug": "dual-control-finansial",
+      "theme": "Keamanan",
+      "summary": "Dua persetujuan independen sebelum transfer/pembayaran.",
+      "lede": "Dua persetujuan independen sebelum transfer/pembayaran.",
+      "sections": [
+        {
+          "heading": "Mengapa ini penting",
+          "intro": "Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.",
+          "points": [
+            "Dua persetujuan independen sebelum transfer/pembayaran.",
+            "Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.",
+            "Libatkan pemilik risiko sejak desain awal."
+          ],
+          "takeaway": "Tuliskan success metric sebelum menulis prompt pertama."
+        },
+        {
+          "heading": "Langkah penerapan",
+          "intro": "Kerangka kerja singkat yang bisa dicoba dalam satu cycle sprint.",
+          "points": [
+            "Petakan input, tools, dan side effects.",
+            "Tambahkan guardrails dan stop conditions.",
+            "Buat 5 skenario evaluasi (sukses, gagal tool, input adversial).",
+            "Jalankan shadow mode sebelum cutover penuh."
+          ]
+        },
+        {
+          "heading": "Checklist rilis",
+          "intro": "Jangan ship tanpa centang ini.",
+          "points": [
+            "Log/trace cukup untuk replay.",
+            "Budget biaya terpasang.",
+            "Jalur eskalasi ke manusia jelas.",
+            "Rollback atau kill switch tersedia."
+          ]
+        }
+      ],
+      "date": "2026-08-24",
+      "slot": 3
     }
-  ],
-  "visibility": "internal",
-  "note": "Jangan dipublish ke GitHub Pages. Digunakan hanya untuk perencanaan editorial."
+  ]
 }

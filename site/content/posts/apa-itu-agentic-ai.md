@@ -1,6 +1,6 @@
 ---
 title: "Apa Itu Agentic AI Automation?"
-date: 2026-07-26T08:00:00+07:00
+date: 2026-07-26T07:00:00+07:00
 draft: false
 theme: Fondasi
 readingTime: 6

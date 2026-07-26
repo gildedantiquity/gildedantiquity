@@ -548,10 +548,27 @@ img {
   .hero-stage {
     position: relative;
     inset: auto;
-    width: min(100%, 420px);
-    margin: 0 0 0.5rem;
-    opacity: 0.85;
-    order: -1;
+    width: min(100%, 280px);
+    margin: 0.25rem 0 0.75rem;
+    opacity: 0.7;
+    order: 2;
+    animation: none;
+  }
+
+  .hero-brand {
+    order: 0;
+  }
+
+  .hero h1 {
+    order: 1;
+  }
+
+  .hero p {
+    order: 3;
+  }
+
+  .cta-row {
+    order: 4;
   }
 
   .hero {

@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div>
+    <strong>{{ .Site.Title }}</strong><br />
+    {{ .Site.Params.tagline }} oleh {{ .Site.Params.author }}.
+  </div>
+  <div>
+    {{ with .Site.Params.github }}
+      <a href="{{ . }}">GitHub</a> ·
+    {{ end }}
+    Hugo · GitHub Pages
+  </div>
+</footer>

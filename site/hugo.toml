@@ -1,0 +1,40 @@
+baseURL = "https://gildedantiquity.github.io/gildedantiquity/"
+languageCode = "id-ID"
+title = "AGENSI"
+defaultContentLanguage = "id"
+enableRobotsTXT = true
+summaryLength = 36
+disableKinds = ["taxonomy", "term"]
+
+[pagination]
+  pagerSize = 12
+
+[params]
+  brand = "AGENSI"
+  tagline = "Blog harian Agentic AI Automation"
+  description = "Jurnal praktik Agentic AI Automation: arsitektur agen, tool use, multi-agent, evaluasi, dan praktik produksi."
+  author = "gildedantiquity"
+  github = "https://github.com/gildedantiquity/gildedantiquity"
+
+[menus]
+  [[menus.main]]
+    name = "Beranda"
+    pageRef = "/"
+    weight = 1
+  [[menus.main]]
+    name = "Blog"
+    pageRef = "/posts/"
+    weight = 2
+  [[menus.main]]
+    name = "Tentang"
+    pageRef = "/about/"
+    weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

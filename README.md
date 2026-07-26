@@ -8,13 +8,12 @@
 
 A passionate software craftsman focusing on building intelligent systems, robust backends, and efficient automation workflows. I love exploring the intersection of AI architecture and high-performance software engineering.
 
-### 📰 AGENSI — Blog Harian Agentic AI Automation
+### 📰 AGENSI — Blog Agentic AI Automation
 
-Blog GitHub Pages tentang otomasi berbasis agen, dengan **jadwal postingan setiap hari** (08:00 WIB).
+Blog Hugo di GitHub Pages tentang otomasi berbasis agen.
 
 - Situs: [gildedantiquity.github.io/gildedantiquity](https://gildedantiquity.github.io/gildedantiquity/)
-- Jadwal 30 hari: [kalender konten](https://gildedantiquity.github.io/gildedantiquity/jadwal.html)
-- Sumber: folder [`docs/`](./docs/)
+- Sumber: folder [`site/`](./site/)
 
 ---
 

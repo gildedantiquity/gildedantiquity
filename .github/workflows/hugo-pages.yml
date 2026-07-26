@@ -1,0 +1,64 @@
+name: Deploy Hugo site to Pages
+
+on:
+  push:
+    branches: ["main"]
+  schedule:
+    # 08:00 WIB (01:00 UTC) — publish posts whose date has arrived
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: "0.148.2"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Build
+        working-directory: site
+        run: hugo --minify --gc
+
+      - name: Ensure internal schedule was not published
+        run: |
+          if [ -e site/public/internal ] || [ -e site/public/posting-schedule.json ] || [ -e site/public/jadwal ] || [ -e site/public/jadwal.html ]; then
+            echo "Internal or schedule paths found in public output" >&2
+            exit 1
+          fi
+          if grep -RInE 'posting-schedule|jadwal postingan|data-schedule' site/public; then
+            echo "Schedule-related content leaked into public output" >&2
+            exit 1
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

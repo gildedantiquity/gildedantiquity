@@ -1,0 +1,75 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="hero-stage" aria-hidden="true">
+      <svg viewBox="0 0 560 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="40" y1="40" x2="520" y2="480" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#0f766e" stop-opacity="0.85" />
+            <stop offset="1" stop-color="#1c2738" stop-opacity="0.55" />
+          </linearGradient>
+        </defs>
+        <rect x="24" y="36" width="512" height="448" fill="url(#g1)" opacity="0.12" />
+        <circle cx="280" cy="250" r="118" stroke="#0f766e" stroke-width="2.5" opacity="0.55" />
+        <circle cx="280" cy="250" r="72" stroke="#115e59" stroke-width="1.5" opacity="0.4" />
+        <path
+          d="M280 132 V188 M280 312 V368 M162 250 H218 M342 250 H398"
+          stroke="#0b1220"
+          stroke-width="2"
+          opacity="0.35"
+        />
+        <circle cx="280" cy="132" r="10" fill="#0f766e" />
+        <circle cx="280" cy="368" r="10" fill="#0b1220" />
+        <circle cx="162" cy="250" r="10" fill="#115e59" />
+        <circle cx="398" cy="250" r="10" fill="#0f766e" />
+        <path d="M190 170 C230 210, 330 210, 370 170" stroke="#0f766e" stroke-width="2" opacity="0.5" />
+        <path d="M190 330 C230 290, 330 290, 370 330" stroke="#1c2738" stroke-width="2" opacity="0.35" />
+        <text
+          x="214"
+          y="256"
+          fill="#0b1220"
+          font-family="Syne, sans-serif"
+          font-size="28"
+          font-weight="800"
+          opacity="0.8"
+        >
+          LOOP
+        </text>
+      </svg>
+    </div>
+
+    <p class="hero-brand">AGEN<em>SI</em></p>
+    <h1>Otomasi yang berpikir, bertindak, dan belajar setiap hari.</h1>
+    <p>
+      Jurnal praktik Agentic AI Automation—dari loop Perceive–Plan–Act hingga guardrails
+      produksi—satu tulisan baru setiap pagi.
+    </p>
+    <div class="cta-row">
+      {{ $posts := .Site.GetPage "/posts" }}
+      {{ with (index (where .Site.RegularPages "Section" "posts") 0) }}
+        <a class="btn btn-primary" href="{{ .RelPermalink }}">Baca edisi terbaru</a>
+      {{ else }}
+        <a class="btn btn-primary" href="{{ with $posts }}{{ .RelPermalink }}{{ end }}">Buka blog</a>
+      {{ end }}
+      <a class="btn btn-ghost" href="{{ with $posts }}{{ .RelPermalink }}{{ end }}">Semua tulisan</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head reveal">
+      <h2>Edisi terbaru</h2>
+      <p>Tulisan terbaru seputar arsitektur, tool use, dan operasi agen di produksi.</p>
+    </div>
+    <div class="post-list">
+      {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+        <a class="post-item reveal" href="{{ .RelPermalink }}">
+          <span class="post-date">{{ .Date.Format "2 Jan" }}</span>
+          <div>
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Summary | plainify | truncate 140 }}</p>
+          </div>
+          <span class="post-arrow" aria-hidden="true">→</span>
+        </a>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

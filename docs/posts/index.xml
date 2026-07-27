@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Sun, 26 Jul 2026 09:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Tool Use &amp; Function Calling untuk Otomasi Nyata</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/tool-use-function-calling/</link><pubDate>Sun, 26 Jul 2026 09:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/tool-use-function-calling/</guid><description>&lt;h2 id="ide-intinya-sederhana">Ide intinya sederhana&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Mon, 27 Jul 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Memory untuk Agen: Short-term, Long-term, dan Episodic</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/memory-untuk-agen/</link><pubDate>Mon, 27 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/memory-untuk-agen/</guid><description>&lt;h2 id="jenis-memori">Jenis memori&lt;/h2>
+&lt;p>Pilih jenis sesuai horizon tugas.&lt;/p>
+&lt;ul>
+&lt;li>Short-term: konteks percakapan&lt;/li>
+&lt;li>Long-term: profil/fakta&lt;/li>
+&lt;li>Episodic: jejak tugas&lt;/li>
+&lt;/ul>
+&lt;h2 id="desain-penyimpanan">Desain penyimpanan&lt;/h2>
+&lt;p>Pisahkan memori dari prompt mentah.&lt;/p>
+&lt;ul>
+&lt;li>Embedding store&lt;/li>
+&lt;li>Key-value facts&lt;/li>
+&lt;li>TTL &amp;amp; privasi&lt;/li>
+&lt;/ul>
+&lt;h2 id="evaluasi-memori">Evaluasi memori&lt;/h2>
+&lt;p>Ukur recall yang berguna, bukan sekadar ukuran index.&lt;/p></description></item><item><title>Multi-Agent: Kapan Satu Agen Tidak Cukup</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/multi-agent-kapan/</link><pubDate>Mon, 27 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/multi-agent-kapan/</guid><description>&lt;h2 id="sinyal-butuh-multi-agen">Sinyal butuh multi-agen&lt;/h2>
+&lt;p>Kompleksitas peran vs kompleksitas tugas.&lt;/p>
+&lt;ul>
+&lt;li>Konflik objective&lt;/li>
+&lt;li>Butuh review independen&lt;/li>
+&lt;li>Parallel research&lt;/li>
+&lt;/ul>
+&lt;h2 id="pola-orkestrasi">Pola orkestrasi&lt;/h2>
+&lt;p>Mulai dari pola sederhana.&lt;/p>
+&lt;ul>
+&lt;li>Supervisor-worker&lt;/li>
+&lt;li>Pipeline stages&lt;/li>
+&lt;li>Debate terbatas&lt;/li>
+&lt;/ul>
+&lt;h2 id="biaya-koordinasi">Biaya koordinasi&lt;/h2>
+&lt;p>Setiap hop antar-agen punya harga.&lt;/p>
+&lt;ul>
+&lt;li>Token overhead&lt;/li>
+&lt;li>Latency&lt;/li>
+&lt;li>Failure propagation&lt;/li>
+&lt;/ul>
+&lt;h2 id="penutup">Penutup&lt;/h2>
+&lt;p>Ringkasnya: Pola orkestrasi researcher–executor–reviewer untuk tugas kompleks. Jadikan ini satu eksperimen kecil hari ini, ukur hasilnya, lalu baru skala.&lt;/p></description></item><item><title>Prompt vs Policy: Menulis Instruksi yang Bisa Dieksekusi</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/prompt-vs-policy/</link><pubDate>Mon, 27 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/prompt-vs-policy/</guid><description>&lt;h2 id="batas-prompt">Batas prompt&lt;/h2>
+&lt;p>Prompt saja tidak cukup untuk produksi.&lt;/p>
+&lt;ul>
+&lt;li>Non-deterministik&lt;/li>
+&lt;li>Sulit diuji&lt;/li>
+&lt;li>Mudah di-bypass&lt;/li>
+&lt;/ul>
+&lt;h2 id="isi-policy">Isi policy&lt;/h2>
+&lt;p>Tulis aturan yang bisa dicek mesin.&lt;/p>
+&lt;ul>
+&lt;li>Tools boleh/tidak&lt;/li>
+&lt;li>Escalation&lt;/li>
+&lt;li>Format keluaran&lt;/li>
+&lt;/ul>
+&lt;h2 id="uji-policy">Uji policy&lt;/h2>
+&lt;p>Perlakukan seperti kode.&lt;/p>
+&lt;ul>
+&lt;li>Fixture skenario&lt;/li>
+&lt;li>Regression suite&lt;/li>
+&lt;li>Versioning&lt;/li>
+&lt;/ul>
+&lt;h2 id="penutup">Penutup&lt;/h2>
+&lt;p>Ringkasnya: Dari prompt longgar ke kebijakan operasional yang jelas dan teruji. Jadikan ini satu eksperimen kecil hari ini, ukur hasilnya, lalu baru skala.&lt;/p></description></item><item><title>Tool Use &amp; Function Calling untuk Otomasi Nyata</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/tool-use-function-calling/</link><pubDate>Sun, 26 Jul 2026 09:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/tool-use-function-calling/</guid><description>&lt;h2 id="ide-intinya-sederhana">Ide intinya sederhana&lt;/h2>
 &lt;p>Model memilih nama fungsi dan argumen terstruktur. Runtime Anda yang mengeksekusi. Hasil eksekusi dikembalikan ke model sebagai observasi berikutnya. Model tidak “langsung menyentuh” produksi; ia mengajukan niat, sistem yang memutuskan boleh tidaknya.&lt;/p>
 &lt;h2 id="kontrak-tool-yang-baik">Kontrak tool yang baik&lt;/h2>
 &lt;ul>

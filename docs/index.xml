@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Mon, 27 Jul 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Memory untuk Agen: Short-term, Long-term, dan Episodic</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/memory-untuk-agen/</link><pubDate>Mon, 27 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/memory-untuk-agen/</guid><description>&lt;h2 id="jenis-memori">Jenis memori&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Tue, 28 Jul 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Evaluasi Agen: Success Rate, Cost, dan Latency</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/evaluasi-agen/</link><pubDate>Tue, 28 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/evaluasi-agen/</guid><description>&lt;h2 id="metrik-inti">Metrik inti&lt;/h2>
+&lt;p>Pilih sedikit angka yang menuntun keputusan.&lt;/p>
+&lt;ul>
+&lt;li>Task success&lt;/li>
+&lt;li>Cost/task&lt;/li>
+&lt;li>p95 latency&lt;/li>
+&lt;/ul>
+&lt;h2 id="dataset-skenario">Dataset skenario&lt;/h2>
+&lt;p>Evaluasi butuh kasus, bukan vibes.&lt;/p>
+&lt;ul>
+&lt;li>Happy path&lt;/li>
+&lt;li>Tool failure&lt;/li>
+&lt;li>Adversarial input&lt;/li>
+&lt;/ul>
+&lt;h2 id="gate-rilis">Gate rilis&lt;/h2>
+&lt;p>Larang deploy jika regresi metrik.&lt;/p>
+&lt;ul>
+&lt;li>Threshold minimum&lt;/li>
+&lt;li>Canary&lt;/li>
+&lt;li>Rollback plan&lt;/li>
+&lt;/ul>
+&lt;h2 id="penutup">Penutup&lt;/h2>
+&lt;p>Ringkasnya: Metrik yang harus Anda ukur sebelum men-scale otomasi. Jadikan ini satu eksperimen kecil hari ini, ukur hasilnya, lalu baru skala.&lt;/p></description></item><item><title>Human-in-the-Loop tanpa Membunuh Otomasi</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/human-in-the-loop/</link><pubDate>Tue, 28 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/human-in-the-loop/</guid><description>&lt;h2 id="pilih-titik-approval">Pilih titik approval&lt;/h2>
+&lt;p>Approve outcome berisiko, bukan setiap langkah.&lt;/p>
+&lt;ul>
+&lt;li>Mutasi data&lt;/li>
+&lt;li>Komunikasi eksternal&lt;/li>
+&lt;li>Biaya di atas ambang&lt;/li>
+&lt;/ul>
+&lt;h2 id="ux-reviewer">UX reviewer&lt;/h2>
+&lt;p>Buat keputusan manusia cepat.&lt;/p>
+&lt;ul>
+&lt;li>Ringkas bukti&lt;/li>
+&lt;li>Satu klik approve/reject&lt;/li>
+&lt;li>Timeout policy&lt;/li>
+&lt;/ul>
+&lt;h2 id="ukur-friksi">Ukur friksi&lt;/h2>
+&lt;p>Pantau bottleneck manusia.&lt;/p>
+&lt;ul>
+&lt;li>Time-to-approve&lt;/li>
+&lt;li>% auto-resolved&lt;/li>
+&lt;li>False escalation&lt;/li>
+&lt;/ul>
+&lt;h2 id="penutup">Penutup&lt;/h2>
+&lt;p>Ringkasnya: Titik approval yang tepat agar tetap cepat tapi terkendali. Jadikan ini satu eksperimen kecil hari ini, ukur hasilnya, lalu baru skala.&lt;/p></description></item><item><title>Observability: Melacak Jejak Keputusan Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/observability-agen/</link><pubDate>Tue, 28 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/observability-agen/</guid><description>&lt;h2 id="apa-yang-di-log">Apa yang di-log&lt;/h2>
+&lt;p>Jejak yang cukup untuk replay.&lt;/p>
+&lt;ul>
+&lt;li>Plan steps&lt;/li>
+&lt;li>Tool args/results&lt;/li>
+&lt;li>Policy decisions&lt;/li>
+&lt;/ul>
+&lt;h2 id="privacy--redaksi">Privacy &amp;amp; redaksi&lt;/h2>
+&lt;p>Observability jangan jadi kebocoran.&lt;/p>
+&lt;ul>
+&lt;li>Mask secret&lt;/li>
+&lt;li>PII policy&lt;/li>
+&lt;li>Retention&lt;/li>
+&lt;/ul>
+&lt;h2 id="replay">Replay&lt;/h2>
+&lt;p>Ulangi kegagalan dengan input yang sama.&lt;/p>
+&lt;ul>
+&lt;li>Deterministic harness&lt;/li>
+&lt;li>Fixture tools&lt;/li>
+&lt;li>Diff output&lt;/li>
+&lt;/ul>
+&lt;h2 id="penutup">Penutup&lt;/h2>
+&lt;p>Ringkasnya: Logging, traces, dan replay untuk debug perilaku non-deterministik. Jadikan ini satu eksperimen kecil hari ini, ukur hasilnya, lalu baru skala.&lt;/p></description></item><item><title>Memory untuk Agen: Short-term, Long-term, dan Episodic</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/memory-untuk-agen/</link><pubDate>Mon, 27 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/memory-untuk-agen/</guid><description>&lt;h2 id="jenis-memori">Jenis memori&lt;/h2>
 &lt;p>Pilih jenis sesuai horizon tugas.&lt;/p>
 &lt;ul>
 &lt;li>Short-term: konteks percakapan&lt;/li>

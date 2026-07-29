@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Tue, 28 Jul 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Evaluasi Agen: Success Rate, Cost, dan Latency</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/evaluasi-agen/</link><pubDate>Tue, 28 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/evaluasi-agen/</guid><description>&lt;h2 id="metrik-inti">Metrik inti&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Wed, 29 Jul 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Browser Agents: Otomasi UI yang Rapuh tapi Powerful</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/browser-agents/</link><pubDate>Wed, 29 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/browser-agents/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Kapan memakai browser agent, dan bagaimana menstabilkannya.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Guardrails: Batas Aman untuk Aksi Otonom</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/guardrails-agen/</link><pubDate>Wed, 29 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/guardrails-agen/</guid><description>&lt;h2 id="kontrol-preventif">Kontrol preventif&lt;/h2>
+&lt;p>Cegah sebelum aksi terjadi.&lt;/p>
+&lt;ul>
+&lt;li>Allowlist&lt;/li>
+&lt;li>Arg validation&lt;/li>
+&lt;li>Rate limit&lt;/li>
+&lt;/ul>
+&lt;h2 id="kontrol-detective">Kontrol detective&lt;/h2>
+&lt;p>Deteksi penyimpangan cepat.&lt;/p>
+&lt;ul>
+&lt;li>Anomaly cost&lt;/li>
+&lt;li>Unexpected tool&lt;/li>
+&lt;li>Loop detector&lt;/li>
+&lt;/ul>
+&lt;h2 id="respons-insiden">Respons insiden&lt;/h2>
+&lt;p>Siapkan tombol berhenti.&lt;/p>
+&lt;ul>
+&lt;li>Kill switch&lt;/li>
+&lt;li>Revoke creds&lt;/li>
+&lt;li>Postmortem template&lt;/li>
+&lt;/ul>
+&lt;h2 id="penutup">Penutup&lt;/h2>
+&lt;p>Ringkasnya: Allowlist tools, budget token, dan kebijakan destructive action. Jadikan ini satu eksperimen kecil hari ini, ukur hasilnya, lalu baru skala.&lt;/p></description></item><item><title>RAG untuk Agen: Dokumen sebagai Sensor Dunia</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/rag-untuk-agen/</link><pubDate>Wed, 29 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/rag-untuk-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Menggabungkan retrieval dengan perencanaan agar jawaban berbasis fakta.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Evaluasi Agen: Success Rate, Cost, dan Latency</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/evaluasi-agen/</link><pubDate>Tue, 28 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/evaluasi-agen/</guid><description>&lt;h2 id="metrik-inti">Metrik inti&lt;/h2>
 &lt;p>Pilih sedikit angka yang menuntun keputusan.&lt;/p>
 &lt;ul>
 &lt;li>Task success&lt;/li>

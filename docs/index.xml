@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Wed, 29 Jul 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Browser Agents: Otomasi UI yang Rapuh tapi Powerful</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/browser-agents/</link><pubDate>Wed, 29 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/browser-agents/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Thu, 30 Jul 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Cost Control: Budget Token per Tugas</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/cost-control-agen/</link><pubDate>Thu, 30 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/cost-control-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Teknik membatasi loop agar otomasi tidak menghabiskan kuota.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Failure Modes Agen yang Paling Sering Muncul</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/failure-modes-agen/</link><pubDate>Thu, 30 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/failure-modes-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Hallucinated tools, infinite loops, dan silent wrong answers.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Workflow Engine + LLM: Teman, Bukan Saingan</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/workflow-engine-llm/</link><pubDate>Thu, 30 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/workflow-engine-llm/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Memadukan n8n/Temporal dengan kemampuan reasoning agen.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Browser Agents: Otomasi UI yang Rapuh tapi Powerful</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/browser-agents/</link><pubDate>Wed, 29 Jul 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/browser-agents/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
 &lt;p>Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
 &lt;ul>
 &lt;li>Kapan memakai browser agent, dan bagaimana menstabilkannya.&lt;/li>

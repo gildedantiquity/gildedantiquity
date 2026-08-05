@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Tue, 04 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>KPI Bisnis untuk Otomasi Agentic</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/kpi-bisnis-agentic/</link><pubDate>Tue, 04 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/kpi-bisnis-agentic/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Wed, 05 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Caching Hasil Tool untuk Loop yang Hemat</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/caching-tool-results/</link><pubDate>Wed, 05 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/caching-tool-results/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Hindari panggilan berulang yang membuang biaya dan waktu.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Idempotency Keys di Aksi Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/idempotency-agen/</link><pubDate>Wed, 05 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/idempotency-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Supaya retry tidak menciptakan efek samping ganda.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Queue Design untuk Pekerjaan Agentic</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/queue-design-agen/</link><pubDate>Wed, 05 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/queue-design-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Backpressure, priority, dan dead-letter untuk tugas agen.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>KPI Bisnis untuk Otomasi Agentic</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/kpi-bisnis-agentic/</link><pubDate>Tue, 04 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/kpi-bisnis-agentic/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
 &lt;p>Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
 &lt;ul>
 &lt;li>Mengukur dampak: waktu hemat, error rate, dan kepuasan.&lt;/li>

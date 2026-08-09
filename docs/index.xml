@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Sat, 08 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Batch vs Online Agent Workloads</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/batch-vs-online/</link><pubDate>Sat, 08 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/batch-vs-online/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Sun, 09 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>A/B Testing Prompt dan Policy</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/ab-testing-policy/</link><pubDate>Sun, 09 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/ab-testing-policy/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Eksperimen terkendali tanpa merusak kepercayaan user.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Dokumentasi Runbook untuk Oncall Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/runbook-agen/</link><pubDate>Sun, 09 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/runbook-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Langkah darurat saat agen salah bertindak di produksi.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Kontrak SLA untuk Fitur Agentic</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/sla-agentic/</link><pubDate>Sun, 09 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/sla-agentic/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Janji layanan yang realistis untuk sistem non-deterministik.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Batch vs Online Agent Workloads</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/batch-vs-online/</link><pubDate>Sat, 08 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/batch-vs-online/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
 &lt;p>Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
 &lt;ul>
 &lt;li>Pilih mode eksekusi sesuai SLA dan biaya.&lt;/li>

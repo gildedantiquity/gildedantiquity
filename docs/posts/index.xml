@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Mon, 10 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Deteksi Infinite Loop secara Real-time</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/detect-infinite-loop/</link><pubDate>Mon, 10 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/detect-infinite-loop/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Tue, 11 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Contract Testing antara Agen dan API Internal</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/contract-testing-agen/</link><pubDate>Tue, 11 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/contract-testing-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Cegah break saat backend berubah diam-diam.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>From Chat UX to Background Automation</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/chat-to-background/</link><pubDate>Tue, 11 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/chat-to-background/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Kapan interaksi harus sinkron, kapan cukup notifikasi.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Privacy by Design pada Agen Perusahaan</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/privacy-by-design-agen/</link><pubDate>Tue, 11 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/privacy-by-design-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Minimasi data, purpose limitation, dan audit akses.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Deteksi Infinite Loop secara Real-time</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/detect-infinite-loop/</link><pubDate>Mon, 10 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/detect-infinite-loop/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
 &lt;p>Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
 &lt;ul>
 &lt;li>Sinyal pengulangan rencana/tool yang harus mematikan tugas.&lt;/li>

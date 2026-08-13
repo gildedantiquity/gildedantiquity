@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Wed, 12 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Mengukur Trust User terhadap Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/mengukur-trust-agen/</link><pubDate>Wed, 12 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/mengukur-trust-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Thu, 13 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Catalog Tools Internal untuk Banyak Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/catalog-tools/</link><pubDate>Thu, 13 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/catalog-tools/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Arsitektur sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Satu registri tools dengan metadata risiko dan pemilik.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Postmortem Template Khusus Insiden Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/postmortem-agen/</link><pubDate>Thu, 13 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/postmortem-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Fokus pada plan, tool, policy—bukan menyalahkan model saja.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Shadow Mode: Jalankan Agen tanpa Efek Samping</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/shadow-mode-agen/</link><pubDate>Thu, 13 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/shadow-mode-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Bandingkan usulan agen dengan aksi manusia sebelum cutover.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Mengukur Trust User terhadap Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/mengukur-trust-agen/</link><pubDate>Wed, 12 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/mengukur-trust-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
 &lt;p>Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
 &lt;ul>
 &lt;li>Survei singkat, override rate, dan repeat usage.&lt;/li>

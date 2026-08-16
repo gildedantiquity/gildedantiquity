@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Sat, 15 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Agent Memory Hygiene dan Right to be Forgotten</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/memory-hygiene/</link><pubDate>Sat, 15 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/memory-hygiene/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/</link><description>Recent content on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Sun, 16 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/index.xml" rel="self" type="application/rss+xml"/><item><title>Benchmark Internal yang Tidak Bocor ke Vendor</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/benchmark-internal/</link><pubDate>Sun, 16 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/benchmark-internal/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Set evaluasi milik sendiri untuk membandingkan model/tools.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Incident Sev Levels untuk Kegagalan Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/sev-levels-agen/</link><pubDate>Sun, 16 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/sev-levels-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Klasifikasi dampak bisnis agar respons proporsional.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>UI Affordance: Kapan User Harus Tahu Ini Agen</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/ui-affordance-agen/</link><pubDate>Sun, 16 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/ui-affordance-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Produk sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Transparansi yang membangun kepercayaan tanpa menakut-nakuti.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Agent Memory Hygiene dan Right to be Forgotten</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/memory-hygiene/</link><pubDate>Sat, 15 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/memory-hygiene/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
 &lt;p>Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
 &lt;ul>
 &lt;li>Hapus/otomasi retensi memori sesuai permintaan dan regulasi.&lt;/li>

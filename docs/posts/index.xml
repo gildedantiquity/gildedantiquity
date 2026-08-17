@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Sun, 16 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Benchmark Internal yang Tidak Bocor ke Vendor</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/benchmark-internal/</link><pubDate>Sun, 16 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/benchmark-internal/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Mon, 17 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Desain Fallback ke Proses Manual</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/fallback-manual/</link><pubDate>Mon, 17 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/fallback-manual/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Operasional sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Jalur cadangan yang sudah dilatih tim saat agen down.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Kalibrasi Kepercayaan Diri Model pada Tool Choice</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/kalibrasi-tool-choice/</link><pubDate>Mon, 17 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/kalibrasi-tool-choice/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Teknik sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Kurangi pemanggilan tool yang salah karena overconfidence.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Migrasi dari Script Otomasi ke Agentic Workflow</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/migrasi-script-ke-agen/</link><pubDate>Mon, 17 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/migrasi-script-ke-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Langkah bertahap tanpa big-bang rewrite.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Benchmark Internal yang Tidak Bocor ke Vendor</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/benchmark-internal/</link><pubDate>Sun, 16 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/benchmark-internal/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
 &lt;p>Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
 &lt;ul>
 &lt;li>Set evaluasi milik sendiri untuk membandingkan model/tools.&lt;/li>

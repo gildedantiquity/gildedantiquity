@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Thu, 20 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Cookbook Debugging: Agen Looping Tanpa Progress</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/debug-looping/</link><pubDate>Thu, 20 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/debug-looping/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on AGENSI</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/</link><description>Recent content in Blog on AGENSI</description><generator>Hugo</generator><language>id-ID</language><lastBuildDate>Fri, 21 Aug 2026 08:00:00 +0700</lastBuildDate><atom:link href="https://gildedantiquity.github.io/gildedantiquity/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Kolaborasi Agen dengan Spreadsheet dan Docs</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/agen-docs-sheet/</link><pubDate>Fri, 21 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/agen-docs-sheet/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Use Case sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Pola aman membaca/menulis artefak kantor sehari-hari.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Mengarsipkan Percakapan Agen untuk Audit</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/arsip-audit-agen/</link><pubDate>Fri, 21 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/arsip-audit-agen/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Keamanan sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Imutabilitas log dan akses berbasis peran.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Pemilihan Use Case Minggu Pertama</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/use-case-minggu-pertama/</link><pubDate>Fri, 21 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/use-case-minggu-pertama/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
+&lt;p>Dalam praktik Agentic AI Automation, tema Strategi sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
+&lt;ul>
+&lt;li>Mulai dari tugas sempit berdata bersih dan risiko rendah.&lt;/li>
+&lt;li>Fokus pada outcome yang bisa diukur, bukan demo yang semata impresif.&lt;/li>
+&lt;li>Libatkan pemilik risiko sejak desain awal.&lt;/li>
+&lt;/ul>
+&lt;p>Tuliskan success metric sebelum menulis prompt pertama.&lt;/p></description></item><item><title>Cookbook Debugging: Agen Looping Tanpa Progress</title><link>https://gildedantiquity.github.io/gildedantiquity/posts/debug-looping/</link><pubDate>Thu, 20 Aug 2026 08:00:00 +0700</pubDate><guid>https://gildedantiquity.github.io/gildedantiquity/posts/debug-looping/</guid><description>&lt;h2 id="mengapa-ini-penting">Mengapa ini penting&lt;/h2>
 &lt;p>Dalam praktik Agentic AI Automation, tema Engineering sering menjadi penentu apakah otomasi bisa dipercaya.&lt;/p>
 &lt;ul>
 &lt;li>Potong loop dengan sinyal progress dan budget.&lt;/li>
